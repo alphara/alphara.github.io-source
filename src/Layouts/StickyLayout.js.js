@@ -100,15 +100,6 @@ export default class StickyLayout extends Component {
 
     return (
       <div>
-        {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
-            background color.
-          */}
-        <style>{`
-          html, body {
-            background: #fff;
-          }
-        `}</style>
-
         <Container text style={{ marginTop: '2em' }}>
           <Header as='h1'>Sticky Example</Header>
           <p>This example shows how to use lazy loaded images, a sticky menu, and a simple text container</p>
