@@ -60,21 +60,6 @@ const RightImage = () => (
   />
 )
 
-const Paragraph = () => (
-  <p>
-    {[
-      'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ',
-      'tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas ',
-      'semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ',
-      'ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean ',
-      'fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. ',
-      'Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor ',
-      'neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, ',
-      'accumsan porttitor, facilisis luctus, metus',
-    ].join('')}
-  </p>
-)
-
 export default class StickyLayout extends Component {
   state = {
     menuFixed: false,
@@ -101,8 +86,15 @@ export default class StickyLayout extends Component {
     return (
       <div>
         <Container text style={{ marginTop: '2em' }}>
-          <Header as='h1'>Sticky Example</Header>
-          <p>This example shows how to use lazy loaded images, a sticky menu, and a simple text container</p>
+          <Header as='h1'>
+            Artem Arakcheev
+          </Header>
+          <Header as='h2'>
+            Artificial Intelligence Architect
+          </Header>
+          <p>
+            Artificial Intelligence Full-Stack Software Architect
+          </p>
         </Container>
 
         {/* Attaching the top menu is a simple operation, we only switch `fixed` prop add add another styles if it has
@@ -122,26 +114,19 @@ export default class StickyLayout extends Component {
               <Menu.Item>
                 <Image size='mini' src='/logo.png' />
               </Menu.Item>
-              <Menu.Item header>Project Name</Menu.Item>
-              <Menu.Item as='a'>Blog</Menu.Item>
-              <Menu.Item as='a'>Articles</Menu.Item>
+              <Menu.Item header>Artem Arakcheev</Menu.Item>
 
               <Menu.Menu position='right'>
-                <Dropdown text='Dropdown' pointing className='link item'>
+                <Dropdown text='☰' pointing className='link item'>
                   <Dropdown.Menu>
-                    <Dropdown.Item>List Item</Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
+                    <Dropdown.Item>About</Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Header>Header Item</Dropdown.Header>
-                    <Dropdown.Item>
-                      <i className='dropdown icon' />
-                      <span className='text'>Submenu</span>
-                      <Dropdown.Menu>
-                        <Dropdown.Item>List Item</Dropdown.Item>
-                        <Dropdown.Item>List Item</Dropdown.Item>
-                      </Dropdown.Menu>
-                    </Dropdown.Item>
-                    <Dropdown.Item>List Item</Dropdown.Item>
+                    <Dropdown.Item>Skills</Dropdown.Item>
+                    <Dropdown.Item>Experience</Dropdown.Item>
+                    <Dropdown.Item>Projects</Dropdown.Item>
+                    <Dropdown.Item>Education</Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item>Contact</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Menu>
@@ -150,13 +135,16 @@ export default class StickyLayout extends Component {
         </Visibility>
 
         <Container text>
-          { _.times(3, i => <Paragraph key={i} />) }
+          <Header as='h3'>
+            Overview
+          </Header>
+          <p>
+            12+ years of successful experience in software development. Higher educated Artificial Intelligence Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
+          </p>
 
-          {/* Example with overlay menu is more complex, SUI simply clones all elements inside, but we should use a
-              different approach.
-              An empty Visibility element controls the need to change the fixing of element below, it also uses height
-              and width params received from its ref for correct display.
-            */}
+          <Header as='h3'>
+            Contact
+          </Header>
           <Visibility
             offset={80}
             once={false}
@@ -190,20 +178,158 @@ export default class StickyLayout extends Component {
               </Menu.Item>
             </Menu>
           </div>
+          <p>
+WEBSITE 🌎 alphara.github.io
+GITHUB    github.com/alphara
+LINKEDIN  linkedin.com/in/artem-arakcheev
+EMAIL  ✉️   artarakcheev@gmail.com
+PHONE  📞 +505 5878 9931
+          </p>
 
-          { _.times(3, i => <Paragraph key={i} />) }
-          <LeftImage />
+          <Header as='h3'>
+            Skills
+          </Header>
+          <p>
+🧠 ARTIFICIAL INTELLIGENCE
+Learning approaches  Machine Learning, Deep Learning, Semi-supervised Learning
+Neural Network architectures MLP, DNN, CNN, RNN, LSTM, GAN
+Frameworks TensorFlow, Keras
+Tools & Platforms Python, Anaconda, Jupyter Notebook, Matplotlib, Numpy, Colaboratory, Kaggle
+Applications Image Classification, Autoencoders, Time Series Prediction, Sentiment Prediction, Text & Image & Music Generation, Game Playing, Planning, etc.
+Computer Vision
+Voice User Interfaces
+Natural Language Processing
 
-          <Paragraph />
-          <RightImage />
+📹 VIDEO PLATFORMS
+Video capturing
+Video streaming
+Video processing, encoding, storing
+Tools  ffmpeg, mplayer, wowza, etc.
 
-          { _.times(4, i => <Paragraph key={i} />) }
-          <LeftImage />
+📊 DATA FORMATS
+Video H.264, MPEG4, MJPEG, MSN3
+Image JPEG, PNG, SVG
+Audio MP3, WAV
+Data JSON, CSV, XML, YAML, Binary, Markdown, etc.
 
-          <Paragraph />
-          <RightImage />
+☁️ COMPUTING
+Cloud Computing AWS (EC2, Lambda, S3, etc.), IBM Watson, RHCloud, Google Cloud Platform
+Hardware architectures CPU/GPU, x86, MIPS32, ARM9, Arduino
+Internet Of Things (IOT) WunderBar
+Operating systems macOS, Linux, Windows 
+🎯 PROJECT MANAGEMENT
+Agile methodology SCRUM, pair programming, etc.
+Team messaging Slack, HipChat
+UML diagrams PlantUML, Visio
+Issue-tracking systems Jira, Mantis, Redmine, Redbooth
 
-          { _.times(2, i => <Paragraph key={i} />) }
+🤖 FULL STACK
+Programming languages Python, Node.js, JavaScript (ES6/7), Lisp, С/С++, Objective-C, Bash scripting
+Backend development Node.js, Swagger, MongoDB, SQL, noSQL, Redis, Express, Mocha, NgineX, 100+ npm modules
+Frontend development React.js, JavaScript (ES6/7), HTML5, CSS3, Webpack, Gulp, NightWatch, Jest
+Payment processors PayPal, Braintree
+API development REST, OAuth2.0, JWT, WebHooks
+API integration Auth0, Talkdesk, Zendesk, Loggly, Google (Safe Browsing, PageSpeed Insights), SendGrid, Twillio, Avast, YSlow, etc.
+Speech-to-Text integration VoiceBase API
+Search & Analysis ELK Stack, ElasticSearch
+Chat Bot development Telegram, Facebook
+Testing environment Test driven development (TDD), tests automation, manual testing
+Package management systems Anaconda, Conda, NPM, PIP, Nix, Homebrew, dpkg, ipkg, RPM, sources
+Network protocols HTTP(s), SSH, FTP, SSL, Web sockets, Ajax, CGI, TCP, UDP, SMTP, RTMP, RTP
+Messaging systems ZeroMQ
+Deployment PM2, Jenkins, Ansible
+Virtualization Docker, VMWare Workstation, VirtualBox
+Version control systems Git (Bitbucket, GitHub), SVN, CVS
+Sniffers Charless, Wireshark
+Code editors and IDEs Vim, Emacs, Sublime, Eclipse
+
+🛰 EMBEDDED SYSTEMS
+Linux development user applications, kernel modules, client-server, multi-threading, cross-compilation, Shell, Gcc, CLang, Dbg, Makefile, etc.
+Linux firmware for embedded systems OpenEmbedded, BitBake, Busybox
+Boot loaders RedBoot, U-Boot
+          </p>
+
+          <Header as='h3'>
+            Experience
+          </Header>
+          <p>
+      <span role="img" aria-label="Consultant">👨🏼‍💼</span>
+      CONSULTANT @ VOICEBASE San Francisco, CA, USA [remotely]
+A key contributor to: 1) dashboard of speech-to-text platform; 2) automatic speech recognition system. Consulted CTO, Director Engineering, teams of developers, devOps and Q&A. Recommended new team members and approaches in software engineering. Designed, developed, tested platform across a full-stack. Reviewed, refactored, improved code of team members. Organized continuous integration, deployment and delivery. Released minimum viable product. Scaled the product for small and medium business. Used AWS cloud computing (EC2, S3, Lambda, etc.). Researched integrations with third-party APIs. Integrated the platform with single sign-on providers. Integrated the service into Talkdesk, Zendesk, SalesForce platforms.
+
+👨🏼‍💼 CTO, CO-FOUNDER @ TRAFFIC PROTECTOR Bali Indonesia [remotely]
+Executed design, development, testing, deployment and support of SaaS startup. Coordinated engineering of a highly effective web service that offers to web site owners a security level and instant notifications with website health status, traffic counters, speed and UI improvements. Managed an IT team with developers, designers, devOps and other members. Designed UI and API. Built backend and frontend. Programmed REST API. Reviewed and improved code of developers. Integrated payment processors. Integrated third party APIs. Used test-driven development. Deployed and scaled the web service. Produced technical documentation. Created step-by-step tutorial. Informed clients with newsletters. Coached and supported customers. Demonstrated the SaaS on Affiliate World Conference, Berlin, 2016.
+
+👨🏻‍💻 LEAD DEVELOPER @ NPTV, DIGITAL OCTOBER
+Moscow, Russia
+Developed next-generation cloud-based digital TV-video platform. Guided design and development of a framework for video broadcasting, processing, capturing, etc. Released framework-based applications for interacting with users and media broadcasting through networks. Created automated tests. Tested and debugged the framework and video platform. Investigated, prepared and analyzed video samples (mp4, h.264, rtmp, raw, etc.). Wrote technical documentation. Participated in projects Web Elections and TV-broadcasting from Olympic games in Sochi, 2014.
+
+👨🏻‍💻 EMBEDDED SYSTEMS ENGINEER @ SMP-SERVICE
+Zelenograd, Russia
+Developed 4 generations of digital video recorders Tral. Engineered and released 200+ firmwares for embedded systems. Evaluated, scheduled and performed software development with team of developers and testers. Projected video streaming. Designed communication protocols and data storage formats. Built applications for video capturing, encoding, processing, data storing, configuration, email sending. Developed Linux-kernel modules for video ADC / DAC, audio, watchdog, serial port, buttons, LEDs, etc. Created and improved Linux-tools, apps, scripts, configurations. Improved code of boot loaders. Integrated GPS-receivers, ABOX security controllers, GPRS / EDGE / 3G-modems to DVRs. Tested and debugged software and hardware. Wrote technical documentation. Created SDK.
+
+👨🏻‍💻 С/С++ DEVELOPER @ RESEARCH INSTITUTE (MIET)
+Zelengorad, Russia
+Developed software for micro controllers firmware installation.
+Designed communication protocol. Executed debugging and testing. Wrote technical documentation.
+          </p>
+
+          <Header as='h3'>
+            Projects
+          </Header>
+          <p>
+
+🏁 WORKING PROJECTS
+ Dashboard for Speech-To-Text platform
+ Automatic speech recognition system
+ TrafficProtector SaaS
+ Cloud-based interactive media platform NPTV
+ Web elections
+ TV-broadcasting from Olympic games in Sochi, 2014
+ Digital video recorders Tral-1, Tral-3, Tral-5, Tral-7
+ Automated parking access control Tral-Parking
+
+
+🚀 STUDYING PROJECTS
+Sudoku AI solver
+AI Game-Playing Agent
+Planning Search
+Sign Language Recognizer
+Video Object Classifier (dog breed)
+Time Series Predictor (stock prices)
+Text Generation
+Machine Translation 
+
+🥇WINNER OF PAYPAL HACKATHON
+Moscow, 2014     Smart Skateboard IOT
+ 
+          </p>
+
+          <Header as='h3'>
+            Education
+          </Header>
+          <p>
+👨🏻‍🎓 ARTIFICIAL INTELLIGENCE ENGINEER @ UDACITY Online education
+
+👨🏻‍🎓 SOFTWARE ENGINEER @ NATIONAL RESEARCH UNIVERSITY OF ELECTRONIC TECHNOLOGY
+Zelengorad, Russia
+Master in Computer Science (MSc) degree equivalent.
+Program 220400 «The Software of Computer facilities and the Automated Systems».
+Courseworks: marketing basics, basics of electrical engineering and circuit theory, engineering and computer graphics, fundamentals of metrology, cybersecurity, numerical methods, software and automated systems
+Capstone project “development of digital video recorder”
+          </p>
+
+          <Header as='h3'>
+            Interests
+          </Header>
+          <p>
+Traveling
+Swimming
+Tensegrity
+Yoga
+Hypnosis
+Laughter
+          </p>
         </Container>
 
         <Segment
