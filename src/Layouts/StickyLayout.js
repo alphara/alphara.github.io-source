@@ -110,7 +110,7 @@ export default class StickyLayout extends Component {
           >
             <Container text>
               <Menu.Item>
-                <Image size='mini' src='/logo.png' />
+                <Image size='mini' src='/Artem.jpg' />
               </Menu.Item>
               <Menu.Item header>Artem Arakcheev</Menu.Item>
 
