@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import StickyLayout from './Layouts/StickyLayout.js';
+import StickyLayout from './Layouts/StickyLayout';
 
 class App extends Component {
   render() {

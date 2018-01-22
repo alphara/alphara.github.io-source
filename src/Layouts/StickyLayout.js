@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import {
   Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
 } from 'semantic-ui-react'
+import './AnchorFix.css'
 
 const menuStyle = {
   border: 'none',
@@ -92,9 +93,6 @@ export default class StickyLayout extends Component {
           <Header as='h2'>
             Artificial Intelligence Architect
           </Header>
-          <p>
-            Artificial Intelligence Full-Stack Software Architect
-          </p>
         </Container>
 
         {/* Attaching the top menu is a simple operation, we only switch `fixed` prop add add another styles if it has
@@ -119,14 +117,16 @@ export default class StickyLayout extends Component {
               <Menu.Menu position='right'>
                 <Dropdown text='☰' pointing className='link item'>
                   <Dropdown.Menu>
-                    <Dropdown.Item>About</Dropdown.Item>
+                    <Dropdown.Item><a href="#overview">Overview</a></Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item>Skills</Dropdown.Item>
-                    <Dropdown.Item>Experience</Dropdown.Item>
-                    <Dropdown.Item>Projects</Dropdown.Item>
-                    <Dropdown.Item>Education</Dropdown.Item>
+                    <Dropdown.Item><a href="#contact">Contact</a></Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item>Contact</Dropdown.Item>
+                    <Dropdown.Item><a href="#skills">Skills</a></Dropdown.Item>
+                    <Dropdown.Item><a href="#experience">Experience</a></Dropdown.Item>
+                    <Dropdown.Item><a href="#projects">Projects</a></Dropdown.Item>
+                    <Dropdown.Item><a href="#education">Education</a></Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item><a href="#interests">Interests</a></Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Menu>
@@ -135,16 +135,20 @@ export default class StickyLayout extends Component {
         </Visibility>
 
         <Container text>
+          <a name="overview"></a>
           <Header as='h3'>
             Overview
           </Header>
           <p>
+            Artem Arakcheev is Artificial Intelligence Full-Stack Software Architect.
             12+ years of successful experience in software development. Higher educated Artificial Intelligence Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
           </p>
 
-          <Header as='h3'>
-            Contact
-          </Header>
+          <a name="contact">
+            <Header as='h3'>
+              Contact
+            </Header>
+          </a>
           <Visibility
             offset={80}
             once={false}
@@ -186,6 +190,7 @@ EMAIL  ✉️   artarakcheev@gmail.com
 PHONE  📞 +505 5878 9931
           </p>
 
+          <a name="skills"></a>
           <Header as='h3'>
             Skills
           </Header>
@@ -249,6 +254,7 @@ Linux firmware for embedded systems OpenEmbedded, BitBake, Busybox
 Boot loaders RedBoot, U-Boot
           </p>
 
+          <a name="experience"></a>
           <Header as='h3'>
             Experience
           </Header>
@@ -274,6 +280,7 @@ Developed software for micro controllers firmware installation.
 Designed communication protocol. Executed debugging and testing. Wrote technical documentation.
           </p>
 
+          <a name="projects"></a>
           <Header as='h3'>
             Projects
           </Header>
@@ -305,6 +312,7 @@ Moscow, 2014     Smart Skateboard IOT
  
           </p>
 
+          <a name="education"></a>
           <Header as='h3'>
             Education
           </Header>
@@ -319,6 +327,7 @@ Courseworks: marketing basics, basics of electrical engineering and circuit theo
 Capstone project “development of digital video recorder”
           </p>
 
+          <a name="education"></a>
           <Header as='h3'>
             Interests
           </Header>
