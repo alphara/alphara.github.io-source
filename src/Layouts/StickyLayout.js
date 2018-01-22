@@ -119,14 +119,13 @@ export default class StickyLayout extends Component {
                   <Dropdown.Menu>
                     <Dropdown.Item><a href="#overview">Overview</a></Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item><a href="#contact">Contact</a></Dropdown.Item>
-                    <Dropdown.Divider />
                     <Dropdown.Item><a href="#skills">Skills</a></Dropdown.Item>
                     <Dropdown.Item><a href="#experience">Experience</a></Dropdown.Item>
                     <Dropdown.Item><a href="#projects">Projects</a></Dropdown.Item>
                     <Dropdown.Item><a href="#education">Education</a></Dropdown.Item>
-                    <Dropdown.Divider />
                     <Dropdown.Item><a href="#interests">Interests</a></Dropdown.Item>
+                    <Dropdown.Divider />
+                    <Dropdown.Item><a href="#contact">Contact</a></Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Menu>
@@ -139,16 +138,6 @@ export default class StickyLayout extends Component {
           <Header as='h3'>
             Overview
           </Header>
-          <p>
-            Artem Arakcheev is Artificial Intelligence Full-Stack Software Architect.
-            12+ years of successful experience in software development. Higher educated Artificial Intelligence Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
-          </p>
-
-          <a name="contact">
-            <Header as='h3'>
-              Contact
-            </Header>
-          </a>
           <Visibility
             offset={80}
             once={false}
@@ -166,28 +155,30 @@ export default class StickyLayout extends Component {
               style={overlayFixed ? fixedOverlayMenuStyle : overlayMenuStyle}
               vertical
             >
-              <Menu.Item>
+              <Menu.Item href='//github.com/alphara' target='_blank' >
+                <Icon name='github' />
+               GitHub
+              </Menu.Item>
+
+              <Menu.Item href='//www.linkedin.com/in/artem-arakcheev' target='_blank' >
+                <Icon name='linkedin' />
+                LinkedIn
+              </Menu.Item>
+
+              <Menu.Item href='//twitter.com/alphara' target='_blank'>
                 <Icon name='twitter' />
                Twitter
               </Menu.Item>
 
-              <Menu.Item >
-                <Icon name='facebook' />
-               Share
-              </Menu.Item>
-
-              <Menu.Item>
+              <Menu.Item href='mailto:artarakcheev@gmail.com' target='_blank'>
                 <Icon name='mail' />
                Email
               </Menu.Item>
             </Menu>
           </div>
           <p>
-WEBSITE 🌎 alphara.github.io
-GITHUB    github.com/alphara
-LINKEDIN  linkedin.com/in/artem-arakcheev
-EMAIL  ✉️   artarakcheev@gmail.com
-PHONE  📞 +505 5878 9931
+            Artem Arakcheev is Artificial Intelligence Full-Stack Software Architect.
+            12+ years of successful experience in software development. Higher educated as Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
           </p>
 
           <a name="skills"></a>
@@ -339,6 +330,21 @@ Yoga
 Hypnosis
 Laughter
           </p>
+
+          <a name="contact"></a>
+            <Header as='h3'>
+              Contact
+            </Header>
+          <p>
+Website https://alphara.github.io
+GitHub https://github.com/alphara
+LinkedIn https://www.linkedin.com/in/artem-arakcheev
+Twitter https://twitter.com/alphara
+Facebook https://www.facebook.com/artarakcheev
+Email artarakcheev@gmail.com
+Phone +55 (21) 96967-6369
+          </p>
+
         </Container>
 
         <Segment
