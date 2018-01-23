@@ -4,6 +4,8 @@ import {
   Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
 } from 'semantic-ui-react'
 import './AnchorFix.css'
+import ImgArtem from './img/Artem.jpg'
+import ImgNeuron from './img/neuron.jpg'
 
 const menuStyle = {
   border: 'none',
@@ -43,24 +45,6 @@ const fixedOverlayMenuStyle = {
   left: '800px',
 }
 
-const LeftImage = () => (
-  <Image
-    floated='left'
-    size='medium'
-    src='/assets/images/wireframe/square-image.png'
-    style={{ margin: '2em 2em 2em -4em' }}
-  />
-)
-
-const RightImage = () => (
-  <Image
-    floated='right'
-    size='medium'
-    src='/assets/images/wireframe/square-image.png'
-    style={{ margin: '2em -4em 2em 2em' }}
-  />
-)
-
 export default class StickyLayout extends Component {
   state = {
     menuFixed: false,
@@ -86,11 +70,28 @@ export default class StickyLayout extends Component {
 
     return (
       <div>
-        <Container text style={{ marginTop: '2em' }}>
-          <Header as='h1'>
+        <Container fluid style={{
+          paddingTop: '3em',
+          paddingBottom: '3em',
+          backgroundImage: `url(${ImgNeuron})`,
+          backgroundBlendMode: 'screen',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center'
+        }}>
+          <Image size='small' src={ImgArtem} circular centered/>
+          <Header as='h1' style={{
+            color: 'white',
+            fontSize: '4em',
+            textShadow: '1px 1px olive'
+          }}>
             Artem Arakcheev
           </Header>
-          <Header as='h2'>
+          <Header as='h2' style={{
+            color: 'white',
+            fontStyle: 'italic',
+            fontSize: '3em',
+            textShadow: '1px 1px olive'
+          }}>
             Artificial Intelligence Architect
           </Header>
         </Container>
@@ -110,7 +111,7 @@ export default class StickyLayout extends Component {
           >
             <Container text>
               <Menu.Item>
-                <Image size='mini' src='/Artem.jpg' />
+                <Image size='mini' src={ImgArtem} circular/>
               </Menu.Item>
               <Menu.Item header>Artem Arakcheev</Menu.Item>
 
