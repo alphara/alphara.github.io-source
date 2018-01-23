@@ -79,14 +79,14 @@ export default class StickyLayout extends Component {
           backgroundPosition: 'center center'
         }}>
           <Image size='small' src={ImgArtem} circular centered/>
-          <Header as='h1' style={{
+          <Header as='h1' textAlign='center' style={{
             color: 'white',
             fontSize: '4em',
             textShadow: '1px 1px olive'
           }}>
             Artem Arakcheev
           </Header>
-          <Header as='h2' style={{
+          <Header as='h2' textAlign='center' style={{
             color: 'white',
             fontStyle: 'italic',
             fontSize: '3em',
