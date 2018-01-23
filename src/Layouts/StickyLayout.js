@@ -170,7 +170,7 @@ export default class StickyLayout extends Component {
         </Visibility>
 
         <Container text>
-          <a name="overview"></a>
+          <a name="overview"> </a>
           <Segment color = 'red'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Overview">🎩 </span>
@@ -220,14 +220,23 @@ export default class StickyLayout extends Component {
             </p>
           </Segment>
 
-          <a name="skills"></a>
+          <a name="skills"> </a>
           <Segment color = 'orange'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Skills">🦄 </span>
               SKILLS
             </Header>
+            <List>
+              <List.Item>
+                <span role="img" aria-label="Brain">🧠 </span>
+                ARTIFICIAL INTELLIGENCE
+                <List.List>
+                  <List.Item>Learning approaches</List.Item>
+                  <List.List>Machine Learning, Deep Learning, Semi-supervised Learning</List.List>
+                </List.List>
+              </List.Item>
+            </List>
             <p>
-🧠 ARTIFICIAL INTELLIGENCE
 Learning approaches  Machine Learning, Deep Learning, Semi-supervised Learning
 Neural Network architectures MLP, DNN, CNN, RNN, LSTM, GAN
 Frameworks TensorFlow, Keras
@@ -287,7 +296,7 @@ Boot loaders RedBoot, U-Boot
             </p>
           </Segment>
 
-          <a name="experience"></a>
+          <a name="experience"> </a>
           <Segment color = 'yellow'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Experiencw">📈 </span>
@@ -316,7 +325,7 @@ Designed communication protocol. Executed debugging and testing. Wrote technical
             </p>
           </Segment>
 
-          <a name="projects"></a>
+          <a name="projects"> </a>
           <Segment color = 'green'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Projects">🏆 </span>
@@ -348,7 +357,7 @@ Moscow, 2014     Smart Skateboard IOT
             </p>
           </Segment>
 
-          <a name="education"></a>
+          <a name="education"> </a>
           <Segment color = 'blue'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Education">🎓 </span>
@@ -366,7 +375,7 @@ Capstone project “development of digital video recorder”
             </p>
           </Segment>
 
-          <a name="interests"></a>
+          <a name="interests"> </a>
           <Segment color='violet'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Interests">💝 </span>
@@ -382,7 +391,7 @@ Laughter
             </p>
           </Segment>
 
-          <a name="contacts"></a>
+          <a name="contacts"> </a>
           <Segment color = 'purple'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Contacts">🌁 </span>
