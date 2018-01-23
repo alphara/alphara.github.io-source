@@ -117,15 +117,50 @@ export default class StickyLayout extends Component {
               <Menu.Menu position='right'>
                 <Dropdown text='☰' pointing className='link item'>
                   <Dropdown.Menu>
-                    <Dropdown.Item><a href="#overview">Overview</a></Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#overview">
+                        <span role="img" aria-label="Overview">🎩 </span>
+                        Overview
+                      </a>
+                    </Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item><a href="#skills">Skills</a></Dropdown.Item>
-                    <Dropdown.Item><a href="#experience">Experience</a></Dropdown.Item>
-                    <Dropdown.Item><a href="#projects">Projects</a></Dropdown.Item>
-                    <Dropdown.Item><a href="#education">Education</a></Dropdown.Item>
-                    <Dropdown.Item><a href="#interests">Interests</a></Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#skills">
+                        <span role="img" aria-label="Skills">🦄  </span>
+                        Skills
+                      </a>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#experience">
+                        <span role="img" aria-label="Experiencw">📈 </span>
+                        Experience
+                      </a>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#projects">
+                        <span role="img" aria-label="Projects">🏆 </span>
+                        Projects
+                      </a>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#education">
+                        <span role="img" aria-label="Education">🎓 </span>
+                        Education
+                      </a>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#interests">
+                        <span role="img" aria-label="Interests">💝 </span>
+                        Interests
+                      </a>
+                    </Dropdown.Item>
                     <Dropdown.Divider />
-                    <Dropdown.Item><a href="#contact">Contact</a></Dropdown.Item>
+                    <Dropdown.Item>
+                      <a href="#contacts">
+                        <span role="img" aria-label="Contacts">🌁 </span>
+                        Contacts
+                      </a>
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Menu>
@@ -135,57 +170,62 @@ export default class StickyLayout extends Component {
 
         <Container text>
           <a name="overview"></a>
-          <Header as='h3'>
-            Overview
-          </Header>
-          <Visibility
-            offset={80}
-            once={false}
-            onTopPassed={this.stickOverlay}
-            onTopVisible={this.unStickOverlay}
-            style={overlayFixed ? { ...overlayStyle, ...overlayRect } : {}}
-          />
+          <Segment color = 'red'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Overview">🎩 </span>
+              OVERVIEW
+            </Header>
+            <Visibility
+              offset={80}
+              once={false}
+              onTopPassed={this.stickOverlay}
+              onTopVisible={this.unStickOverlay}
+              style={overlayFixed ? { ...overlayStyle, ...overlayRect } : {}}
+            />
 
-          <div
-            ref={this.handleOverlayRef}
-            style={overlayFixed ? fixedOverlayStyle : overlayStyle}
-          >
-            <Menu
-              icon='labeled'
-              style={overlayFixed ? fixedOverlayMenuStyle : overlayMenuStyle}
-              vertical
+            <div
+              ref={this.handleOverlayRef}
+              style={overlayFixed ? fixedOverlayStyle : overlayStyle}
             >
-              <Menu.Item href='//github.com/alphara' target='_blank' >
-                <Icon name='github' />
-               GitHub
-              </Menu.Item>
+              <Menu
+                icon='labeled'
+                style={overlayFixed ? fixedOverlayMenuStyle : overlayMenuStyle}
+                vertical
+              >
+                <Menu.Item href='//github.com/alphara' target='_blank' >
+                  <Icon name='github' />
+                 GitHub
+                </Menu.Item>
 
-              <Menu.Item href='//www.linkedin.com/in/artem-arakcheev' target='_blank' >
-                <Icon name='linkedin' />
-                LinkedIn
-              </Menu.Item>
+                <Menu.Item href='//www.linkedin.com/in/artem-arakcheev' target='_blank' >
+                  <Icon name='linkedin' />
+                  LinkedIn
+                </Menu.Item>
 
-              <Menu.Item href='//twitter.com/alphara' target='_blank'>
-                <Icon name='twitter' />
-               Twitter
-              </Menu.Item>
+                <Menu.Item href='//twitter.com/alphara' target='_blank'>
+                  <Icon name='twitter' />
+                 Twitter
+                </Menu.Item>
 
-              <Menu.Item href='mailto:artarakcheev@gmail.com' target='_blank'>
-                <Icon name='mail' />
-               Email
-              </Menu.Item>
-            </Menu>
-          </div>
-          <p>
-            Artem Arakcheev is Artificial Intelligence Full-Stack Software Architect.
-            12+ years of successful experience in software development. Higher educated as Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
-          </p>
+                <Menu.Item href='mailto:artarakcheev@gmail.com' target='_blank'>
+                  <Icon name='mail' />
+                 Email
+                </Menu.Item>
+              </Menu>
+            </div>
+            <p>
+              Artem Arakcheev is Artificial Intelligence Full-Stack Software Architect.
+              12+ years of successful experience in software development. Higher educated as Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
+            </p>
+          </Segment>
 
           <a name="skills"></a>
-          <Header as='h3'>
-            Skills
-          </Header>
-          <p>
+          <Segment color = 'orange'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Skills">🦄 </span>
+              SKILLS
+            </Header>
+            <p>
 🧠 ARTIFICIAL INTELLIGENCE
 Learning approaches  Machine Learning, Deep Learning, Semi-supervised Learning
 Neural Network architectures MLP, DNN, CNN, RNN, LSTM, GAN
@@ -243,13 +283,16 @@ Code editors and IDEs Vim, Emacs, Sublime, Eclipse
 Linux development user applications, kernel modules, client-server, multi-threading, cross-compilation, Shell, Gcc, CLang, Dbg, Makefile, etc.
 Linux firmware for embedded systems OpenEmbedded, BitBake, Busybox
 Boot loaders RedBoot, U-Boot
-          </p>
+            </p>
+          </Segment>
 
           <a name="experience"></a>
-          <Header as='h3'>
-            Experience
-          </Header>
-          <p>
+          <Segment color = 'yellow'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Experiencw">📈 </span>
+              EXPERIENCE
+            </Header>
+            <p>
       <span role="img" aria-label="Consultant">👨🏼‍💼</span>
       CONSULTANT @ VOICEBASE San Francisco, CA, USA [remotely]
 A key contributor to: 1) dashboard of speech-to-text platform; 2) automatic speech recognition system. Consulted CTO, Director Engineering, teams of developers, devOps and Q&A. Recommended new team members and approaches in software engineering. Designed, developed, tested platform across a full-stack. Reviewed, refactored, improved code of team members. Organized continuous integration, deployment and delivery. Released minimum viable product. Scaled the product for small and medium business. Used AWS cloud computing (EC2, S3, Lambda, etc.). Researched integrations with third-party APIs. Integrated the platform with single sign-on providers. Integrated the service into Talkdesk, Zendesk, SalesForce platforms.
@@ -269,14 +312,16 @@ Developed 4 generations of digital video recorders Tral. Engineered and released
 Zelengorad, Russia
 Developed software for micro controllers firmware installation.
 Designed communication protocol. Executed debugging and testing. Wrote technical documentation.
-          </p>
+            </p>
+          </Segment>
 
           <a name="projects"></a>
-          <Header as='h3'>
-            Projects
-          </Header>
-          <p>
-
+          <Segment color = 'green'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Projects">🏆 </span>
+              PROJECTS
+            </Header>
+            <p>
 🏁 WORKING PROJECTS
  Dashboard for Speech-To-Text platform
  Automatic speech recognition system
@@ -286,7 +331,6 @@ Designed communication protocol. Executed debugging and testing. Wrote technical
  TV-broadcasting from Olympic games in Sochi, 2014
  Digital video recorders Tral-1, Tral-3, Tral-5, Tral-7
  Automated parking access control Tral-Parking
-
 
 🚀 STUDYING PROJECTS
 Sudoku AI solver
@@ -300,14 +344,16 @@ Machine Translation 
 
 🥇WINNER OF PAYPAL HACKATHON
 Moscow, 2014     Smart Skateboard IOT
- 
-          </p>
+            </p>
+          </Segment>
 
           <a name="education"></a>
-          <Header as='h3'>
-            Education
-          </Header>
-          <p>
+          <Segment color = 'blue'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Education">🎓 </span>
+              EDUCATION
+            </Header>
+            <p>
 👨🏻‍🎓 ARTIFICIAL INTELLIGENCE ENGINEER @ UDACITY Online education
 
 👨🏻‍🎓 SOFTWARE ENGINEER @ NATIONAL RESEARCH UNIVERSITY OF ELECTRONIC TECHNOLOGY
@@ -316,26 +362,32 @@ Master in Computer Science (MSc) degree equivalent.
 Program 220400 «The Software of Computer facilities and the Automated Systems».
 Courseworks: marketing basics, basics of electrical engineering and circuit theory, engineering and computer graphics, fundamentals of metrology, cybersecurity, numerical methods, software and automated systems
 Capstone project “development of digital video recorder”
-          </p>
+            </p>
+          </Segment>
 
-          <a name="education"></a>
-          <Header as='h3'>
-            Interests
-          </Header>
-          <p>
+          <a name="interests"></a>
+          <Segment color='violet'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Interests">💝 </span>
+              INTERESTS
+            </Header>
+            <p>
 Traveling
 Swimming
 Tensegrity
 Yoga
 Hypnosis
 Laughter
-          </p>
+            </p>
+          </Segment>
 
-          <a name="contact"></a>
-            <Header as='h3'>
-              Contact
+          <a name="contacts"></a>
+          <Segment color = 'purple'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Contacts">🌁 </span>
+              CONTACTS
             </Header>
-          <p>
+            <p>
 Website https://alphara.github.io
 GitHub https://github.com/alphara
 LinkedIn https://www.linkedin.com/in/artem-arakcheev
@@ -343,7 +395,8 @@ Twitter https://twitter.com/alphara
 Facebook https://www.facebook.com/artarakcheev
 Email artarakcheev@gmail.com
 Phone +55 (21) 96967-6369
-          </p>
+            </p>
+          </Segment>
 
         </Container>
 
