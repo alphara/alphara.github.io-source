@@ -407,48 +407,28 @@ Phone +55 (21) 96967-6369
           vertical
         >
           <Container textAlign='center'>
-            <Grid columns={4} divided stackable inverted>
+            <Grid columns={1} divided stackable inverted>
               <Grid.Row>
                 <Grid.Column>
-                  <Header inverted as='h4' content='Group 1' />
-                  <List link inverted>
-                    <List.Item as='a'>Link One</List.Item>
-                    <List.Item as='a'>Link Two</List.Item>
-                    <List.Item as='a'>Link Three</List.Item>
-                    <List.Item as='a'>Link Four</List.Item>
+                  <Header inverted as='h4' content='Artem Arakcheev' />
+                  <List>
+                    <List.Item as='p'>Artificial Intelligence Architect</List.Item>
                   </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Group 2' />
-                  <List link inverted>
-                    <List.Item as='a'>Link One</List.Item>
-                    <List.Item as='a'>Link Two</List.Item>
-                    <List.Item as='a'>Link Three</List.Item>
-                    <List.Item as='a'>Link Four</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Group 3' />
-                  <List link inverted>
-                    <List.Item as='a'>Link One</List.Item>
-                    <List.Item as='a'>Link Two</List.Item>
-                    <List.Item as='a'>Link Three</List.Item>
-                    <List.Item as='a'>Link Four</List.Item>
-                  </List>
-                </Grid.Column>
-                <Grid.Column>
-                  <Header inverted as='h4' content='Footer Header' />
-                  <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
                 </Grid.Column>
               </Grid.Row>
             </Grid>
+            <Image size='tiny' src={ImgArtem} circular centered style={{
+              marginTop: '2em'
+            }}/>
             <Divider inverted section />
-            <Image src='/logo.png' centered size='mini' />
             <List horizontal inverted divided link>
-              <List.Item as='a' href='#'>Site Map</List.Item>
-              <List.Item as='a' href='#'>Contact Us</List.Item>
-              <List.Item as='a' href='#'>Terms and Conditions</List.Item>
-              <List.Item as='a' href='#'>Privacy Policy</List.Item>
+              <List.Item as='a' href='//alphara.github.io' target='_blank'>Website</List.Item>
+              <List.Item as='a' href='//github.com/alphara' target='_blank'>GitHub</List.Item>
+              <List.Item as='a' href='//linkedin.com/in/artem-arakcheev' target='_blank'>LinkedIn</List.Item>
+              <List.Item as='a' href='//twitter.com/alphara' target='_blank'>Twitter</List.Item>
+              <List.Item as='a' href='//facebook.com/artarakcheev' target='_blank'>Facebook</List.Item>
+              <List.Item as='a' href='mailto:artarakcheev@gmail.com' target='_blank'>Email</List.Item>
+              <List.Item as='p'>+55 (21) 96967-6369</List.Item>
             </List>
           </Container>
         </Segment>
