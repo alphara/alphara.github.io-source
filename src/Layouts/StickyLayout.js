@@ -5,8 +5,13 @@ import {
   Visibility
 } from 'semantic-ui-react'
 
+import Overview from './Overview'
 import Skills from './Skills'
 import Experience from './Experience'
+import Projects from './Projects'
+import Education from './Education'
+import Interests from './Interests'
+import Contacts from './Contacts'
 
 import './AnchorFix.css'
 
@@ -220,10 +225,7 @@ export default class StickyLayout extends Component {
                 </Menu.Item>
               </Menu>
             </div>
-            <p>
-              Artem Arakcheev is Artificial Intelligence Full-Stack Software Architect.
-              12+ years of successful experience in software development. Higher educated as Software Engineer (MCS). Expert in all phases of software development lifecycle: in specification of software requirements, software design, implementation, testing/debugging, integration, deployment/installation and maintenance. Developing Artificial Intelligence applications, Machine Learning and Deep Learning algorithms, Neural Network architectures, SaaS (full-stack), APIs, web services, applications, utilities, components, kernel modules, boot loaders, firmware and system software for multiple platforms. Using cloud computing, servers, desktops, tablets, mobiles and embedded systems. Excellent in integration of third-party APIs, payment processors, libraries and open source code. Responsibilities include providing innovative and cost-effective engineering solutions to meet technical objectives and timing. Works fine independently and in a team. Analytical, creative, critical and innovative thinker. Excellent communications skills. Able to work with clients directly. Consultant. SaaS startup co-founder. Winner of PayPal hackathon (Moscow, 2014). Interests are Artificial Intelligence, Quantum Computing, Brain-machine interfaces.
-            </p>
+            <Overview />
           </Segment>
 
           <a name="skills"> </a>
@@ -250,30 +252,7 @@ export default class StickyLayout extends Component {
               <span role="img" aria-label="Projects">🏆 </span>
               PROJECTS
             </Header>
-            <p>
-🏁 WORKING PROJECTS
- Dashboard for Speech-To-Text platform
- Automatic speech recognition system
- TrafficProtector SaaS
- Cloud-based interactive media platform NPTV
- Web elections
- TV-broadcasting from Olympic games in Sochi, 2014
- Digital video recorders Tral-1, Tral-3, Tral-5, Tral-7
- Automated parking access control Tral-Parking
-
-🚀 STUDYING PROJECTS
-Sudoku AI solver
-AI Game-Playing Agent
-Planning Search
-Sign Language Recognizer
-Video Object Classifier (dog breed)
-Time Series Predictor (stock prices)
-Text Generation
-Machine Translation 
-
-🥇WINNER OF PAYPAL HACKATHON
-Moscow, 2014     Smart Skateboard IOT
-            </p>
+            <Projects />
           </Segment>
 
           <a name="education"> </a>
@@ -282,16 +261,7 @@ Moscow, 2014     Smart Skateboard IOT
               <span role="img" aria-label="Education">🎓 </span>
               EDUCATION
             </Header>
-            <p>
-👨🏻‍🎓 ARTIFICIAL INTELLIGENCE ENGINEER @ UDACITY Online education
-
-👨🏻‍🎓 SOFTWARE ENGINEER @ NATIONAL RESEARCH UNIVERSITY OF ELECTRONIC TECHNOLOGY
-Zelengorad, Russia
-Master in Computer Science (MSc) degree equivalent.
-Program 220400 «The Software of Computer facilities and the Automated Systems».
-Courseworks: marketing basics, basics of electrical engineering and circuit theory, engineering and computer graphics, fundamentals of metrology, cybersecurity, numerical methods, software and automated systems
-Capstone project “development of digital video recorder”
-            </p>
+            <Education />
           </Segment>
 
           <a name="interests"> </a>
@@ -300,14 +270,7 @@ Capstone project “development of digital video recorder”
               <span role="img" aria-label="Interests">💝 </span>
               INTERESTS
             </Header>
-            <p>
-Traveling
-Swimming
-Tensegrity
-Yoga
-Hypnosis
-Laughter
-            </p>
+            <Interests />
           </Segment>
 
           <a name="contacts"> </a>
@@ -316,17 +279,8 @@ Laughter
               <span role="img" aria-label="Contacts">🌁 </span>
               CONTACTS
             </Header>
-            <p>
-Website https://alphara.github.io
-GitHub https://github.com/alphara
-LinkedIn https://www.linkedin.com/in/artem-arakcheev
-Twitter https://twitter.com/alphara
-Facebook https://www.facebook.com/artarakcheev
-Email artarakcheev@gmail.com
-Phone +55 (21) 96967-6369
-            </p>
+            <Contacts />
           </Segment>
-
         </Container>
 
         <Segment
