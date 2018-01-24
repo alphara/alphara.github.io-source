@@ -350,9 +350,9 @@ export default function Skills(props) {
                 skills={[
                   'User Applications',
                   'Kernel Modules',
-                  'client-server',
-                  'multi-threading',
-                  'cross-compilation',
+                  'Client-Server',
+                  'Multi-Threading',
+                  'Cross-Compilation',
                   'Shell',
                   'Gcc',
                   'CLang',

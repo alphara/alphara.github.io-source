@@ -117,7 +117,7 @@ export default class StickyLayout extends Component {
         >
           <Menu
             borderless
-            fixed={menuFixed && 'top'}
+            fixed={menuFixed ? 'top' : null}
             style={menuFixed ? fixedMenuStyle : menuStyle}
           >
             <Container text>
