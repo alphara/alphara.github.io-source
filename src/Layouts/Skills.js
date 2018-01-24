@@ -98,8 +98,8 @@ export default function Skills(props) {
                 skills={[
                   'Image/Video Representation, Analysis and Segmentation',
                   'Features and Object Recognition',
+                  'Identity Protection',
                   'Face, Facial Keypoint and Emotion Detection',
-                  'Identity protection',
                   'OpenCV'
                 ]}
               />

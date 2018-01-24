@@ -3,7 +3,9 @@ import {
   Icon, List
 } from 'semantic-ui-react'
 
-const listIcon = 'heartbeat'
+const listIcons = ['globe', 'dot circle outline', 'target', 'caret right',
+  'heartbeat']
+const listIcon = listIcons[Math.floor(Math.random() * listIcons.length)];
 
 export default function SkillList(props) {
   return (
