@@ -1,11 +1,22 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
 import {
-  Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment, Visibility,
+  Container, Divider, Dropdown, Grid, Header, Icon, Image, List, Menu, Segment,
+  Visibility, Item
 } from 'semantic-ui-react'
+import SkillList from './SkillList'
+
 import './AnchorFix.css'
+
 import ImgArtem from './img/Artem.jpg'
 import ImgNeuron from './img/neuron.jpg'
+import ImgAI from './img/ai.jpg'
+import ImgFullStack from './img/full-stack.png'
+import ImgEmbeddedSystems from './img/embedded-systems.jpg'
+import ImgVideoPlatforms from './img/video-platforms.png'
+import ImgDataFormats from './img/data-formats.jpg'
+import ImgComputing from './img/computing.jpg'
+import ImgProjectManagement from './img/project-management.jpg'
 
 const menuStyle = {
   border: 'none',
@@ -226,74 +237,530 @@ export default class StickyLayout extends Component {
               <span role="img" aria-label="Skills">🦄 </span>
               SKILLS
             </Header>
-            <List>
-              <List.Item>
-                <span role="img" aria-label="Brain">🧠 </span>
-                ARTIFICIAL INTELLIGENCE
-                <List.List>
-                  <List.Item>Learning approaches</List.Item>
-                  <List.List>Machine Learning, Deep Learning, Semi-supervised Learning</List.List>
-                </List.List>
-              </List.Item>
-            </List>
-            <p>
-Learning approaches  Machine Learning, Deep Learning, Semi-supervised Learning
-Neural Network architectures MLP, DNN, CNN, RNN, LSTM, GAN
-Frameworks TensorFlow, Keras
-Tools & Platforms Python, Anaconda, Jupyter Notebook, Matplotlib, Numpy, Colaboratory, Kaggle
-Applications Image Classification, Autoencoders, Time Series Prediction, Sentiment Prediction, Text & Image & Music Generation, Game Playing, Planning, etc.
-Computer Vision
-Voice User Interfaces
-Natural Language Processing
 
-📹 VIDEO PLATFORMS
-Video capturing
-Video streaming
-Video processing, encoding, storing
-Tools  ffmpeg, mplayer, wowza, etc.
+            <Item.Group>
+              <Item>
+                <Item.Image size='small' src={ImgAI} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">🧠 </span>
+                    ARTIFICIAL INTELLIGENCE
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Machine Learning'
+                        skills={[
+                          'Deep Learning',
+                          'Supervised Learning',
+                          'Unsupervised Learning',
+                          'Semi-supervised Learning',
+                          'Reinforcement Learning',
+                          'Q-Learning'
+                        ]}
+                      />
+                      <SkillList
+                        name='Neural Networks'
+                        skills={[
+                          'Multilayer Perceptron (MLP)',
+                          'Convolutional (CNN)',
+                          'Recurrent (RNN)',
+                          'Long short-term memory (LSTM)',
+                          'Generative adversarial networks (GAN)',
+                          'Autoencoders'
+                        ]}
+                      />
+                      <SkillList
+                        name='Neural Networks'
+                        skills={[
+                          'Multilayer Perceptron (MLP)',
+                          'Convolutional (CNN)',
+                          'Recurrent (RNN)',
+                          'Long short-term memory (LSTM)',
+                          'Generative Adversarial Networks (GAN)',
+                          'Autoencoders'
+                        ]}
+                      />
+                      <SkillList
+                        name='Frameworks'
+                        skills={[
+                          'TensorFlow',
+                          'PyTorch',
+                          'Keras',
+                        ]}
+                      />
+                      <SkillList
+                        name='Tools & Platforms'
+                        skills={[
+                          'Python',
+                          'Anaconda',
+                          'Jupyter Notebook',
+                          'Matplotlib',
+                          'Numpy',
+                          'Colaboratory',
+                          'Kaggle'
+                        ]}
+                      />
+                      <SkillList
+                        name='Applications'
+                        skills={[
+                          'Image Classification',
+                          'Time Series Prediction',
+                          'Sentiment Analysis',
+                          'Text & Image & Music Generation',
+                          'Game Playing',
+                          'Planning'
+                        ]}
+                      />
+                      <SkillList
+                        name='Computer Vision'
+                        skills={[
+                          'Image/Video Representation, Analysis and Segmentation',
+                          'Features and Object Recognition',
+                          'Face, Facial Keypoint and Emotion Detection',
+                          'Identity protection',
+                          'OpenCV'
+                        ]}
+                      />
+                      <SkillList
+                        name='Voice User Interfaces'
+                        skills={[
+                          'Automatic Speech Recognition (ASR)',
+                          'LibriSpeech'
+                        ]}
+                      />
+                      <SkillList
+                        name='Natural Language Processing'
+                        skills={[
+                          'Natural Language Toolkit (NLTK)',
+                          'Machine Translation',
+                          'Question-Answering Systems',
+                          'Chatbots'
+                        ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
 
-📊 DATA FORMATS
-Video H.264, MPEG4, MJPEG, MSN3
-Image JPEG, PNG, SVG
-Audio MP3, WAV
-Data JSON, CSV, XML, YAML, Binary, Markdown, etc.
+              <Item>
+                <Item.Image size='small' src={ImgFullStack} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">🤖</span>
+                    FULL STACK
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Programming Languages'
+                        skills={[
+                          'Python',
+                          'Node.js',
+                          'JavaScript (ES6/7)',
+                          'Lisp',
+                          'С/С++',
+                          'Objective-C',
+                          'Bash scripting'
+                        ]}
+                      />
+                      <SkillList
+                        name='Backend Development'
+                        skills={[
+                          'Node.js',
+                          'Swagger',
+                          'MongoDB',
+                          'SQL',
+                          'noSQL',
+                          'Redis',
+                          'Express',
+                          'Mocha',
+                          'NgineX',
+                          '100+ npm modules'
+                        ]}
+                      />
+                      <SkillList
+                        name='Frontend Development'
+                        skills={[
+                          'React.js',
+                          'JavaScript (ES6/7)',
+                          'HTML5',
+                          'CSS3',
+                          'Webpack',
+                          'Gulp',
+                          'NightWatch',
+                          'Jest'
+                        ]}
+                      />
+                      <SkillList
+                        name='Payment Processors'
+                        skills={[
+                          'PayPal',
+                          'Braintree'
+                        ]}
+                      />
+                      <SkillList
+                        name='API Development'
+                        skills={[
+                          'REST',
+                          'OAuth2.0',
+                          'JWT',
+                          'WebHooks'
+                        ]}
+                      />
+                      <SkillList
+                        name='API Integration'
+                        skills={[
+                          'Auth0',
+                          'Talkdesk',
+                          'Zendesk',
+                          'Loggly',
+                          'Google (Safe Browsing, PageSpeed Insights)',
+                          'SendGrid',
+                          'Twillio',
+                          'Avast',
+                          'YSlow',
+                          'Etc.'
+                        ]}
+                      />
+                      <SkillList
+                        name='Speech-to-Text Integration'
+                        skills={[
+                          'VoiceBase API'
+                        ]}
+                      />
+                      <SkillList
+                        name='Data Search & Analysis'
+                        skills={[
+                          'ELK Stack',
+                          'ElasticSearch'
+                        ]}
+                      />
+                      <SkillList
+                        name='Chatbot Development'
+                        skills={[
+                          'Telegram',
+                          'Facebook'
+                        ]}
+                      />
+                      <SkillList
+                        name='Testing '
+                        skills={[
+                          'Test Driven Development (TDD)',
+                          'Tests Automation',
+                          'Manual Testing'
+                        ]}
+                      />
+                      <SkillList
+                        name='Package management'
+                        skills={[
+                          'Anaconda',
+                          'Conda',
+                          'NPM',
+                          'PIP',
+                          'Nix',
+                          'Homebrew',
+                          'dpkg',
+                          'ipkg',
+                          'RPM',
+                          'sources'
+                        ]}
+                      />
+                      <SkillList
+                        name='Network protocols'
+                        skills={[
+                          'HTTP(s)',
+                          'SSH',
+                          'FTP',
+                          'SSL',
+                          'Web sockets',
+                          'Ajax',
+                          'CGI',
+                          'TCP',
+                          'UDP',
+                          'SMTP',
+                          'RTMP',
+                          'RTP'
+                        ]}
+                      />
+                      <SkillList
+                        name='Distributed Messaging'
+                        skills={[
+                          'ZeroMQ'
+                        ]}
+                      />
+                      <SkillList
+                        name='Deployment'
+                        skills={[
+                          'PM2',
+                          'Jenkins',
+                          'Ansible'
+                        ]}
+                      />
+                      <SkillList
+                        name='Virtualization'
+                        skills={[
+                          'Docker',
+                          'VMWare Workstation',
+                          'VirtualBox'
+                        ]}
+                      />
+                      <SkillList
+                        name='Version control'
+                        skills={[
+                          'Git (Bitbucket, GitHub)',
+                          'SVN',
+                          'CVS'
+                        ]}
+                      />
+                      <SkillList
+                        name='Sniffers '
+                        skills={[
+                          'Charless',
+                          'Wireshark'
+                        ]}
+                      />
+                      <SkillList
+                        name='Code editors and IDEs'
+                        skills={[
+                          'Vim',
+                          'Emacs',
+                          'Sublime',
+                          'Eclipse'
+                        ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
 
-☁️ COMPUTING
-Cloud Computing AWS (EC2, Lambda, S3, etc.), IBM Watson, RHCloud, Google Cloud Platform
-Hardware architectures CPU/GPU, x86, MIPS32, ARM9, Arduino
-Internet Of Things (IOT) WunderBar
-Operating systems macOS, Linux, Windows 
-🎯 PROJECT MANAGEMENT
-Agile methodology SCRUM, pair programming, etc.
-Team messaging Slack, HipChat
-UML diagrams PlantUML, Visio
-Issue-tracking systems Jira, Mantis, Redmine, Redbooth
+              <Item>
+                <Item.Image size='small' src={ImgEmbeddedSystems} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">🛰</span>
+                    EMBEDDED SYSTEMS
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Linux Development'
+                        skills={[
+                          'User Applications',
+                          'Kernel Modules',
+                          'client-server',
+                          'multi-threading',
+                          'cross-compilation',
+                          'Shell',
+                          'Gcc',
+                          'CLang',
+                          'Dbg',
+                          'Makefile',
+                          'Etc.'
+                        ]}
+                      />
+                      <SkillList
+                        name='Linux Firmware'
+                        skills={[
+                          'OpenEmbedded',
+                          'BitBake',
+                          'Busybox'
+                        ]}
+                      />
+                      <SkillList
+                        name='Boot loaders'
+                        skills={[
+                          'RedBoot',
+                          'U-Boot'
+                        ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
+              <Item>
+                <Item.Image size='small' src={ImgVideoPlatforms} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">📹 </span>
+                    VIDEO PLATFORMS
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Video capturing'
+                        skills={[
+                        ]}
+                      />
+                      <SkillList
+                        name='Video streaming'
+                        skills={[
+                        ]}
+                      />
+                      <SkillList
+                        name='Video processing, encoding, storing'
+                        skills={[
+                        ]}
+                      />
+                      <SkillList
+                        name='Tools'
+                        skills={[
+                          'ffmpeg',
+                          'mplayer',
+                          'wowza',
+                          'etc.'
+                       ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
 
-🤖 FULL STACK
-Programming languages Python, Node.js, JavaScript (ES6/7), Lisp, С/С++, Objective-C, Bash scripting
-Backend development Node.js, Swagger, MongoDB, SQL, noSQL, Redis, Express, Mocha, NgineX, 100+ npm modules
-Frontend development React.js, JavaScript (ES6/7), HTML5, CSS3, Webpack, Gulp, NightWatch, Jest
-Payment processors PayPal, Braintree
-API development REST, OAuth2.0, JWT, WebHooks
-API integration Auth0, Talkdesk, Zendesk, Loggly, Google (Safe Browsing, PageSpeed Insights), SendGrid, Twillio, Avast, YSlow, etc.
-Speech-to-Text integration VoiceBase API
-Search & Analysis ELK Stack, ElasticSearch
-Chat Bot development Telegram, Facebook
-Testing environment Test driven development (TDD), tests automation, manual testing
-Package management systems Anaconda, Conda, NPM, PIP, Nix, Homebrew, dpkg, ipkg, RPM, sources
-Network protocols HTTP(s), SSH, FTP, SSL, Web sockets, Ajax, CGI, TCP, UDP, SMTP, RTMP, RTP
-Messaging systems ZeroMQ
-Deployment PM2, Jenkins, Ansible
-Virtualization Docker, VMWare Workstation, VirtualBox
-Version control systems Git (Bitbucket, GitHub), SVN, CVS
-Sniffers Charless, Wireshark
-Code editors and IDEs Vim, Emacs, Sublime, Eclipse
+              <Item>
+                <Item.Image size='small' src={ImgDataFormats} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">📊</span>
+                    DATA FORMATS
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Video'
+                        skills={[
+                          'H.264',
+                          'MPEG4',
+                          'MJPEG',
+                          'MSN3'
+                        ]}
+                      />
+                      <SkillList
+                        name='Image'
+                        skills={[
+                          'JPEG',
+                          'PNG',
+                          'SVG'
+                        ]}
+                      />
+                      <SkillList
+                        name='Audio'
+                        skills={[
+                          'MP3',
+                          'WAV'
+                        ]}
+                      />
+                      <SkillList
+                        name='Data'
+                        skills={[
+                          'JSON',
+                          'CSV',
+                          'XML',
+                          'YAML',
+                          'Binary',
+                          'Markdown'
+                        ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
 
-🛰 EMBEDDED SYSTEMS
-Linux development user applications, kernel modules, client-server, multi-threading, cross-compilation, Shell, Gcc, CLang, Dbg, Makefile, etc.
-Linux firmware for embedded systems OpenEmbedded, BitBake, Busybox
-Boot loaders RedBoot, U-Boot
-            </p>
+              <Item>
+                <Item.Image size='small' src={ImgComputing} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">☁️ </span>
+                    COMPUTING
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Cloud Computing'
+                        skills={[
+                          'AWS (EC2, Lambda, S3, etc.)',
+                          'IBM Watson',
+                          'RHCloud',
+                          'Google Cloud Platform'
+                        ]}
+                      />
+                      <SkillList
+                        name='Hardware architectures'
+                        skills={[
+                          'CPU/GPU',
+                          'x86/x64',
+                          'MIPS',
+                          'ARM',
+                          'Arduino'
+                        ]}
+                      />
+                      <SkillList
+                        name='Internet Of Things (IOT)'
+                        skills={[
+                          'WunderBar'
+                        ]}
+                      />
+                      <SkillList
+                        name='Operating systems'
+                        skills={[
+                          'macOS',
+                          'Linux',
+                          'Windows'
+                        ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
+
+              <Item>
+                <Item.Image size='small' src={ImgProjectManagement} />
+                <Item.Content>
+                  <Item.Header>
+                    <span role="img" aria-label="Brain">🎯</span>
+                    PROJECT MANAGEMENT
+                  </Item.Header>
+                  <Item.Description>
+                    <List>
+                      <SkillList
+                        name='Agile methodology'
+                        skills={[
+                          'SCRUM',
+                          'Pair Programming',
+                          'Code Review',
+                          'Unit Testing',
+                          'Etc.'
+                        ]}
+                      />
+                      <SkillList
+                        name='Team messaging'
+                        skills={[
+                          'Slack',
+                          'HipChat'
+                        ]}
+                      />
+                      <SkillList
+                        name='UML diagrams'
+                        skills={[
+                          'PlantUML',
+                          'Visio'
+                        ]}
+                      />
+                      <SkillList
+                        name='Issue-tracking systems'
+                        skills={[
+                          'Jira',
+                          'Mantis',
+                          'Redmine',
+                          'Redbooth'
+                        ]}
+                      />
+                    </List>
+                  </Item.Description>
+                </Item.Content>
+              </Item>
+
+
+            </Item.Group>
           </Segment>
 
           <a name="experience"> </a>
