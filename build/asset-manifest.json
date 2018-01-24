@@ -1,14 +1,20 @@
 {
-  "main.css": "static/css/main.62e422a8.css",
-  "main.css.map": "static/css/main.62e422a8.css.map",
-  "main.js": "static/js/main.c97af4fd.js",
-  "main.js.map": "static/js/main.c97af4fd.js.map",
+  "main.css": "static/css/main.16bd79f3.css",
+  "main.css.map": "static/css/main.16bd79f3.css.map",
+  "main.js": "static/js/main.881d90a5.js",
+  "main.js.map": "static/js/main.881d90a5.js.map",
   "static/media/Artem.jpg": "static/media/Artem.72f41297.jpg",
+  "static/media/ai.jpg": "static/media/ai.8c7cfb4e.jpg",
+  "static/media/computing.jpg": "static/media/computing.39a9a0f3.jpg",
+  "static/media/embedded-systems.jpg": "static/media/embedded-systems.388ad113.jpg",
   "static/media/flags.png": "static/media/flags.9c74e172.png",
+  "static/media/full-stack.png": "static/media/full-stack.8db2a674.png",
   "static/media/icons.eot": "static/media/icons.674f50d2.eot",
   "static/media/icons.svg": "static/media/icons.912ec66d.svg",
   "static/media/icons.ttf": "static/media/icons.b06871f2.ttf",
   "static/media/icons.woff": "static/media/icons.fee66e71.woff",
   "static/media/icons.woff2": "static/media/icons.af7ae505.woff2",
-  "static/media/neuron.jpg": "static/media/neuron.6e49e72e.jpg"
+  "static/media/neuron.jpg": "static/media/neuron.6e49e72e.jpg",
+  "static/media/project-management.jpg": "static/media/project-management.8afbaa3e.jpg",
+  "static/media/video-platforms.png": "static/media/video-platforms.d994ee2e.png"
 }
