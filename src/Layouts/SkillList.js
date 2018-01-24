@@ -8,7 +8,10 @@ const listIcon = 'heartbeat'
 export default function SkillList(props) {
   return (
     <List.Item>
-      <List.Header>{props.name}</List.Header>
+      <List.Header>
+        <span role="img" aria-label="Emoji">{props.emoji} </span>
+        {props.name}
+      </List.Header>
       <List.Content>
         <List horizontal>
           <List.Item></List.Item>
