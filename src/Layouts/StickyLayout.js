@@ -63,7 +63,7 @@ const overlayMenuStyle = {
 
 const fixedOverlayMenuStyle = {
   ...overlayMenuStyle,
-  left: '800px',
+  left: '710px',
 }
 
 export default class StickyLayout extends Component {
@@ -278,18 +278,6 @@ export default class StickyLayout extends Component {
                           'Recurrent (RNN)',
                           'Long short-term memory (LSTM)',
                           'Generative adversarial networks (GAN)',
-                          'Autoencoders'
-                        ]}
-                      />
-                      <SkillList
-                        emoji={emoji['ai']}
-                        name='Neural Networks'
-                        skills={[
-                          'Multilayer Perceptron (MLP)',
-                          'Convolutional (CNN)',
-                          'Recurrent (RNN)',
-                          'Long short-term memory (LSTM)',
-                          'Generative Adversarial Networks (GAN)',
                           'Autoencoders'
                         ]}
                       />
