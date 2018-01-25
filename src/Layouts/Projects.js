@@ -3,7 +3,6 @@ import {
   Item
 } from 'semantic-ui-react'
 
-import ImgTODO from './img/TODO.png'
 import ImgSmartCall from './img/smart-call.png'
 import ImgWebasr from './img/webasr.png'
 import ImgTrafficProtector from './img/traffic-protector.png'
