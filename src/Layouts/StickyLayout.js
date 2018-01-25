@@ -144,7 +144,7 @@ export default class StickyLayout extends Component {
                     </Dropdown.Item>
                     <Dropdown.Item>
                       <a href="#experience">
-                        <span role="img" aria-label="Experiencw">📈 </span>
+                        <span role="img" aria-label="Experience">📈 </span>
                         Experience
                       </a>
                     </Dropdown.Item>
@@ -240,7 +240,7 @@ export default class StickyLayout extends Component {
           <a name="experience"> </a>
           <Segment color = 'yellow'>
             <Header as='h3' textAlign='left' dividing>
-              <span role="img" aria-label="Experiencw">📈 </span>
+              <span role="img" aria-label="Experience">📈 </span>
               EXPERIENCE
             </Header>
             <Experience />
