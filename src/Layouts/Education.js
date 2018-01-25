@@ -23,7 +23,7 @@ export default function Education(props) {
         are going to redefine virtually every aspect of our lives.
         <br />
         <List as='ul'>
-          <List.Header>
+          <List.Header as='h4'>
             Projects:
           </List.Header>
           <List.Item as='li'>
