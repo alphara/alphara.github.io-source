@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import StickyLayout from './Layouts/StickyLayout';
+import CVLayout from './CVLayout';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <StickyLayout />
+        <CVLayout />
       </div>
     );
   }
