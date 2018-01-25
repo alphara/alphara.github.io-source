@@ -5,14 +5,15 @@ import {
 
 import Course from './Course'
 
-import ImgTODO from './img/TODO.png'
+import ImgUdacity from './img/udacity.jpg'
+import ImgMIET from './img/miet.jpg'
 
 export default function Education(props) {
   return (
     <Item.Group>
 
       <Course
-        image={ImgTODO}
+        image={ImgUdacity}
         icon='👨🏻‍🎓 '
         degree='Artificial Intelligence Engineer'
         school='Udacity'
@@ -64,7 +65,7 @@ export default function Education(props) {
       <Divider section />
 
       <Course
-        image={ImgTODO}
+        image={ImgMIET}
         icon='👨🏻‍🎓 '
         degree='Software Engineer'
         school='National Research University Of Electronic Technology'

@@ -4,6 +4,7 @@ import {
 } from 'semantic-ui-react'
 
 import ImgTODO from './img/TODO.png'
+import ImgQuantumComputer from './img/quantum-computer.jpg'
 
 export default function Interests(props) {
   return (
@@ -20,21 +21,44 @@ export default function Interests(props) {
             <span role="img" aria-label="Flag"> 🇵🇦</span> Panama,
             <span role="img" aria-label="Flag"> 🇨🇷</span> Costa Rica,
             <span role="img" aria-label="Flag"> 🇳🇮</span> Nicaragua,
-            <span role="img" aria-label="Flag"> 🇲🇽</span> Mexico,
             <span role="img" aria-label="Flag"> 🇵🇪</span> Peru,
+            <span role="img" aria-label="Flag"> 🇲🇽</span> Mexico,
             <span role="img" aria-label="Flag"> 🇩🇪</span> Germany,
             <span role="img" aria-label="Flag"> 🇮🇩</span> Indonesia,
             <span role="img" aria-label="Flag"> 🇹🇭</span> Thailand,
             <span role="img" aria-label="Flag"> 🇺🇸</span> USA,
             <span role="img" aria-label="Flag"> 🇹🇷</span> Turkey,
             <span role="img" aria-label="Flag"> 🇺🇦</span> Ukraine,
-            <span role="img" aria-label="Flag"> 🇮🇳</span> India,
             <span role="img" aria-label="Flag"> 🇳🇵</span> Nepal,
+            <span role="img" aria-label="Flag"> 🇮🇳</span> India,
             <span role="img" aria-label="Flag"> 🇪🇸</span> Spain,
             <span role="img" aria-label="Flag"> 🇪🇬</span> Egypt
           </Item.Description>
         </Item.Content>
       </Item>
+
+      <Item>
+        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Content>
+          <Item.Header>
+            Psychology
+          </Item.Header>
+          <Item.Description>
+            Ericksonian Hypnosis (completed course),
+            Trance Induction,
+            Neuro-Linguistic Programming (completed courses NLP Master Practitioner, NLP Master Practitioner, New Code of NLP),
+            Strategy Modeling,
+            Holotropic Breathwork,
+            Provocative Therapy,
+            Thanatotherapy,
+            Body Therapy
+            Laugther Therapy,
+            Humor Therapy,
+            Human Design
+          </Item.Description>
+        </Item.Content>
+      </Item>
+
 
       <Item>
         <Item.Image size='tiny' src={ImgTODO} />
@@ -58,28 +82,6 @@ export default function Interests(props) {
             Tensegrity,
             Yoga,
             Dynamic Trance States
-          </Item.Description>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
-        <Item.Content>
-          <Item.Header>
-            Psychology
-          </Item.Header>
-          <Item.Description>
-            Ericksonian Hypnosis (completed course),
-            Trance Induction,
-            Neuro-Linguistic Programming (completed courses NLP Master Practitioner, NLP Master Practitioner, New Code of NLP),
-            Strategy Modeling,
-            Holotropic Breathwork,
-            Provocative Therapy,
-            Thanatotherapy,
-            Body Therapy
-            Laugther Therapy,
-            Humor Therapy,
-            Human Design
           </Item.Description>
         </Item.Content>
       </Item>
@@ -150,7 +152,7 @@ export default function Interests(props) {
       </Item>
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgQuantumComputer} />
         <Item.Content>
           <Item.Header>
             Quantum computers

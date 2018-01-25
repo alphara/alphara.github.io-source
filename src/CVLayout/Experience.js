@@ -5,13 +5,17 @@ import {
 
 import Job from './Job'
 
-import ImgTODO from './img/TODO.png'
+import ImgVoicebase from './img/voicebase.png'
+import ImgTrafficProtector from './img/trafficprotector.png'
+import ImgNPTV from './img/nptv.jpg'
+import ImgSMPService from './img/smp-service.png'
+import ImgMIETLogo from './img/miet-logo.jpg'
 
 export default function Experience(props) {
   return (
     <Item.Group>
       <Job
-        image={ImgTODO}
+        image={ImgVoicebase}
         icon='👨🏼‍💼 '
         position='Software Consultant'
         organization='VoiceBase'
@@ -38,7 +42,7 @@ export default function Experience(props) {
       <Divider section />
 
       <Job
-        image={ImgTODO}
+        image={ImgTrafficProtector}
         icon='👨🏼‍💼 '
         position='CTO, Co-Founder'
         organization='Traffic Protector'
@@ -63,7 +67,7 @@ export default function Experience(props) {
       <Divider section />
 
       <Job
-        image={ImgTODO}
+        image={ImgNPTV}
         icon='👨🏻‍💻 '
         position='Lead Developer'
         organization='NPTV, Digital October Group'
@@ -83,7 +87,7 @@ export default function Experience(props) {
       <Divider section />
 
       <Job
-        image={ImgTODO}
+        image={ImgSMPService}
         icon='👨🏻‍💻 '
         position='Senior Embedded Systems Engineer'
         organization='SMP-Service'
@@ -108,11 +112,11 @@ export default function Experience(props) {
       <Divider section />
 
       <Job
-        image={ImgTODO}
+        image={ImgMIETLogo}
         icon='👨🏻‍💻 '
         position='C/C++ Developer'
-        organization='Research Institute (MIET)'
-        location='Zelengorad, Moscow, Russia'
+        organization='National Research University Of Electronic Technology'
+        location='Zelengorad, Russia'
         dates='Sep, 2005 - Feb, 2006'
       >
         Developed software for micro controllers firmware installation.
