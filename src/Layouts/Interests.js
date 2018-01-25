@@ -43,6 +43,7 @@ export default function Interests(props) {
             Swimming
           </Item.Header>
           <Item.Description>
+            I love to swim for miles; I could just go back and forth.
           </Item.Description>
         </Item.Content>
       </Item>

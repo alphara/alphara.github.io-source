@@ -120,7 +120,6 @@ export default function Experience(props) {
         Executed debugging and testing.
         Wrote technical documentation.
       </Job>
-      <Divider section />
     </Item.Group>
   );
 }
