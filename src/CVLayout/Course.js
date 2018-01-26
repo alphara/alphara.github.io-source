@@ -23,6 +23,18 @@ export default function Course(props) {
               <Icon name='calendar' />
             </Header>
           </Segment>
+          { props.location1 && props.dates1 &&
+          <Segment basic clearing stacked size='mini'>
+            <Header as='h5' floated='left' color='grey'>
+              <Icon name='marker' />
+              {props.location1}
+            </Header>
+            <Header as='h5' floated='right' color='grey'>
+              {props.dates1}
+              <Icon name='calendar' />
+            </Header>
+          </Segment>
+          }
         </Item.Meta>
         <Item.Description>
           <Segment basic>

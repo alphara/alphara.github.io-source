@@ -7,6 +7,7 @@ import Course from './Course'
 
 import ImgTODO from './img/TODO.png'
 import ImgUdacity from './img/udacity.jpg'
+import ImgVipassana from './img/vipassana.jpg'
 import ImgIGISP from './img/igisp.png'
 import ImgTheatreObraz from './img/theatre-obraz.jpg'
 import ImgNLPCenter from './img/nlp-center.jpg'
@@ -43,6 +44,34 @@ export default function Education(props) {
         Graduates of this program are valuable core to any team
         working in the domain of AI, and opportunities exist in healthcare,
         finance, retail, media, advertising, education, and more.
+      </Course>
+      <Divider section />
+
+      <Course
+        image={ImgVipassana}
+        icon='🧘🏻‍ '
+        degree='Meditator'
+        school='Vipassana Center'
+        location='Lucknow, India'
+        dates='Jul, 2017 (10 days)'
+        location1='Dharamsala, India'
+        dates1='May, 2017 (10 days)'
+        href='//www.dhamma.org/en-US/index'
+      >
+        Vipassana, which means to see things as they really are,
+        is one of India's most ancient techniques of meditation.
+        It was taught in India more than 2500 years ago as a universal
+        remedy for universal ills, i.e., an Art of Living.
+        <br/>
+        <br/>
+        Vipassana is a way of self-transformation through self-observation.
+        It focuses on the deep interconnection between mind and body,
+        which can be experienced directly by disciplined attention to the
+        physical sensations that form the life of the body, and that
+        continuously interconnect and condition the life of the mind.
+        It is this observation-based, self-exploratory journey to the
+        common root of mind and body that dissolves mental impurity,
+        resulting in a balanced mind full of love and compassion.
       </Course>
       <Divider section />
 
