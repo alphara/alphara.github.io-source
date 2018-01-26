@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Item, Segment, Header, Icon
+  Item, Segment, Header, Icon, Button
 } from 'semantic-ui-react'
 
 export default function Job(props) {
@@ -30,6 +30,16 @@ export default function Job(props) {
             {props.children}
           </Segment>
         </Item.Description>
+        { props.href &&
+          <Item.Content>
+            <Button basic floated='right' as='a' target='_blank'
+              href={props.href}
+            >
+              <Icon name='linkify' />
+              Website
+            </Button>
+          </Item.Content>
+        }
       </Item.Content>
     </Item>
   );

@@ -21,6 +21,7 @@ export default function Experience(props) {
         organization='VoiceBase'
         location='San Francisco, CA, USA [remotely]'
         dates='Nov, 2016 - Nov, 2017'
+        href='//www.voicebase.com/'
       >
         A key contributor to:
         1) dashboard of speech-to-text platform;
@@ -73,6 +74,7 @@ export default function Experience(props) {
         organization='NPTV, Digital October Group'
         location='Moscow, Russia'
         dates='Dec, 2013 - Dec, 2014'
+        href='//nptv.com/'
       >
         Developed next-generation cloud-based digital TV-video platform.
         Guided design and development of a framework for video broadcasting,
@@ -93,6 +95,7 @@ export default function Experience(props) {
         organization='SMP-Service'
         location='Zelenograd, Russia'
         dates='Feb, 2006 - Oct, 2013'
+        href='//www.tral.ru'
       >
         Developed 3 generations of digital video recorders Tral.
         Engineered and released 200+ firmwares for embedded systems.
@@ -118,6 +121,7 @@ export default function Experience(props) {
         organization='National Research University Of Electronic Technology'
         location='Zelengorad, Russia'
         dates='Sep, 2005 - Feb, 2006'
+        href='//eng.miet.ru'
       >
         Developed software for micro controllers firmware installation.
         Designed communication protocol.
