@@ -16,7 +16,39 @@ import Contacts from './Contacts'
 import './AnchorFix.css'
 
 import ImgArtem from './img/Artem.jpg'
-import ImgNeuron from './img/neuron.jpg'
+
+import ImgSurface1 from './img/surface/1.png'
+import ImgSurface2 from './img/surface/2.jpg'
+import ImgSurface8 from './img/surface/8.jpg'
+
+import ImgSurface10  from './img/surface/10.jpg'
+import ImgSurface15 from './img/surface/15.jpg'
+import ImgSurface17 from './img/surface/17.jpg'
+
+import ImgSurface36 from './img/surface/36.jpg'
+import ImgSurface38 from './img/surface/38.png'
+
+import ImgSurface42 from './img/surface/42.jpg'
+import ImgSurface43 from './img/surface/43.jpg'
+import ImgSurface45 from './img/surface/45.jpg'
+import ImgSurface48 from './img/surface/48.png'
+
+const listSurfaces = [
+  ImgSurface1,
+  ImgSurface2,
+  ImgSurface8,
+  ImgSurface10,
+  ImgSurface15,
+  ImgSurface17,
+  ImgSurface36,
+  ImgSurface38,
+  ImgSurface42,
+  ImgSurface43,
+  ImgSurface45,
+  ImgSurface48,
+]
+const ImgSurface = listSurfaces[Math.floor(Math.random() * listSurfaces.length)];
+
 
 const menuStyle = {
   border: 'none',
@@ -84,7 +116,7 @@ export default class StickyLayout extends Component {
         <Container fluid style={{
           paddingTop: '3em',
           paddingBottom: '3em',
-          backgroundImage: `url(${ImgNeuron})`,
+          backgroundImage: `url(${ImgSurface})`,
           backgroundBlendMode: 'screen',
           backgroundSize: 'cover',
           backgroundPosition: 'center center'
