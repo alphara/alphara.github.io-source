@@ -1,16 +1,24 @@
 import React from 'react'
-import {
-  Item
-} from 'semantic-ui-react'
+import { Item, Divider } from 'semantic-ui-react'
 
 import ImgTODO from './img/TODO.png'
+import ImgTraveling from './img/traveling.jpg'
+import ImgPsychology from './img/psychology.jpg'
+import ImgSwimming from './img/swimming.jpg'
+import ImgBodyPractices from './img/body-practices.jpg'
+import ImgSpiritualism from './img/spiritualism.jpg'
+import ImgActingSkills from './img/acting-skills.jpg'
+import ImgHumor from './img/humor.jpg'
+import ImgInfobusiness from './img/infobusiness.jpg'
+import ImgArtificialSuperIntelligence from './img/artificial-super-intelligence.jpg'
 import ImgQuantumComputer from './img/quantum-computer.jpg'
+import ImgBrainMachineInterfaces from './img/brain-machine-interfaces.jpg'
 
 export default function Interests(props) {
   return (
     <Item.Group>
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgTraveling} />
         <Item.Content>
           <Item.Header>
             Traveling
@@ -36,9 +44,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgPsychology} />
         <Item.Content>
           <Item.Header>
             Psychology
@@ -58,10 +67,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
-
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgSwimming} />
         <Item.Content>
           <Item.Header>
             Swimming
@@ -71,9 +80,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgBodyPractices} />
         <Item.Content>
           <Item.Header>
             Body practices
@@ -85,9 +95,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgSpiritualism} />
         <Item.Content>
           <Item.Header>
             Spiritualism
@@ -100,8 +111,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
+
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgActingSkills} />
         <Item.Content>
           <Item.Header>
             Acting Skills & Public Performance
@@ -113,9 +126,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgHumor} />
         <Item.Content>
           <Item.Header>
             Humor & Laughter
@@ -127,9 +141,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgInfobusiness} />
         <Item.Content>
           <Item.Header>
             Infobusiness
@@ -139,9 +154,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgArtificialSuperIntelligence} />
         <Item.Content>
           <Item.Header>
             Artificial Super Intelligence
@@ -150,6 +166,7 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgQuantumComputer} />
@@ -161,9 +178,10 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgTODO} />
+        <Item.Image size='tiny' src={ImgBrainMachineInterfaces} />
         <Item.Content>
           <Item.Header>
             Brain-Machine Interfaces
@@ -172,7 +190,6 @@ export default function Interests(props) {
           </Item.Description>
         </Item.Content>
       </Item>
-
 
     </Item.Group>
   );

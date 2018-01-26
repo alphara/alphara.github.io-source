@@ -1,7 +1,5 @@
 import React from 'react'
-import {
-  Item
-} from 'semantic-ui-react'
+import { Item, Divider } from 'semantic-ui-react'
 
 import ImgSmartCall from './img/smart-call.png'
 import ImgWebasr from './img/webasr.png'
@@ -18,7 +16,7 @@ import ImgSudoku from './img/sudoku.png'
 import ImgGamePlaying from './img/game-playing.jpg'
 import ImgPlanningSearch from './img/planning-search.jpg'
 import ImgSignRecognizer from './img/sign-recognizer.jpg'
-import ImgDogBreed from './img/dog-breed.jpg'
+import ImgObjectDetection from './img/object-detection.png'
 import ImgTimeSeries from './img/time-series.png'
 import ImgTextGenerator from './img/text-generator.jpg'
 import ImgMachineTranslation from './img/machine-translation.jpg'
@@ -53,6 +51,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgWebasr} />
@@ -70,6 +69,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTrafficProtector} />
@@ -85,6 +85,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgNPTV} />
@@ -109,6 +110,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTral7} />
@@ -134,6 +136,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTral5} />
@@ -150,6 +153,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTral3} />
@@ -168,6 +172,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTral1} />
@@ -185,6 +190,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTralAuto} />
@@ -202,6 +208,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTralM} />
@@ -219,6 +226,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTralParking} />
@@ -246,6 +254,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgSudoku} />
@@ -261,6 +270,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgGamePlaying} />
@@ -276,6 +286,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgPlanningSearch} />
@@ -293,6 +304,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgSignRecognizer} />
@@ -313,9 +325,10 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgDogBreed} />
+        <Item.Image size='tiny' src={ImgObjectDetection} />
         <Item.Content>
           <Item.Header>
             <span role="img" aria-label="Rocket">🚀 </span>
@@ -328,6 +341,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTimeSeries} />
@@ -343,6 +357,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgTextGenerator} />
@@ -359,6 +374,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgMachineTranslation} />
@@ -374,6 +390,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgSpeechRecognizer} />
@@ -388,6 +405,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgKeyPoints} />
@@ -406,6 +424,7 @@ export default function Projects(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
       <Item>
         <Item.Image size='tiny' src={ImgSmartSkateboard} />

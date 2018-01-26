@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  Item, Segment, Header, Icon
+  Item, Segment, Header, Icon, Button
 } from 'semantic-ui-react'
 
 export default function Course(props) {
@@ -30,6 +30,14 @@ export default function Course(props) {
             {props.children}
           </Segment>
         </Item.Description>
+        <Item.Extra>
+          <Button basic as='a' floated='right' size='medium' target='_blank'
+            href={props.href}
+          >
+            <Icon name='linkify' />
+            Read More
+          </Button>
+        </Item.Extra>
       </Item.Content>
     </Item>
   );
