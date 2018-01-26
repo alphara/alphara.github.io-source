@@ -125,6 +125,15 @@ export default function Contacts(props) {
       </List.Item>
 
       <List.Item>
+        <Button color='grey' as='a' target='_blank'
+          href='https://www.mixcloud.com/arakcheev/'
+        >
+          <Icon name='mixcloud' />
+          Mixcloud
+        </Button>
+      </List.Item>
+
+      <List.Item>
         <Button color='orange' as='a' target='_blank'
           href='https://soundcloud.com/alphara-1'
         >
