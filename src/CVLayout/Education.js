@@ -92,58 +92,81 @@ export default function Education(props) {
         the practice of Ericksonian hypnotherapy, more complex techniques,
         acquiring one's own therapeutic experience.
         <br />
-        <br />
-        The participants of the program receive
-        (1) the skills of guiding and maintaining a hypnotic trance,
-        (2) the skills of therapeutic work with clients on a wide variety
-        of issues,
-        (3) the skills of using Eriksonian hypnosis in group work,
-        (4) self-hypnosis skills, allowing more fully and deeper use "wisdom"
-        of own unconscious,
-        (5) the possibility of teaching clients the skills of self-hypnosis.
+        <List ordered>
+          <List.Header as='h5'>
+            The participants of the program receive the following skills:
+          </List.Header>
+          <List.Item>
+            Guiding and maintaining a hypnotic trance
+          </List.Item>
+          <List.Item>
+            Therapeutic work with clients on a wide variety of issues
+          </List.Item>
+          <List.Item>
+            Using Eriksonian hypnosis in group work
+          </List.Item>
+          <List.Item>
+            Self-hypnosis skills, allowing more fully and deeper use "wisdom"
+            of own unconscious
+          </List.Item>
+          <List.Item>
+            Possibility of teaching clients with the skills of self-hypnosis
+          </List.Item>
+        </List>
       </Course>
       <Divider section />
 
       <Course
         image={ImgTheatreObraz}
-        icon='👨🏻‍🎓 '
+        icon='🕴🏻 '
         degree='Actor'
         school='Theater School "Image"'
         location='Moscow, Russia'
         dates='Jul, 2009 - Jun, 2010 (243 hours)'
         href='//www.teatr-obraz.ru/page/kursy-akterskogo-masterstva-dlya-zhizni-i-stseny'
       >
-A complex of exercises on acting, plastic; speech techniques and psychotechnics.
-
-    Mastering the basics of acting and the initial techniques to achieve a creative state. The development of the state of playfulness and the state of permission as natural states of man. Work with the imagination. The process of attention.
-    Work with dramaturgy. Action in the proposed circumstances, the disclosure of the character of the image, atmosphere, coloring, psychological gesture. Improvisation.
-    Work with a partner. Ability to feel, hear, feel partner, both on stage and in life.
-
-Subjects:
-
-• Acting skills
-• Speech (breathing, voice, spontaneous speech)
-• Plastic (work with the body)
-• Psychotechnics (management of emotions and reactions).
-• Game players (exercises in a game form aimed at solving clear tasks).
-• Acting: working on a monologue, working on a dialogue (interaction with a partner)
-• Psychotechnics (as an operational daily aid in life)
-• Speech (breathing, voice, spontaneous speech)
-• Plastic (working with the body).
-• Work on the play. The production and display of the performance is carried out on professional theatrical grounds of the city.
-
-
-    Passing the program develops the following skills:
-Clearly express thoughts, improve diction;
-Control emotions;
-Understand people, read "body language";
-Adjust yourself to receive positive emotions;
-Present yourself and be the center of attention;
-Develop the plasticity of the body;
-Voice and breathing;
-The ability to speak beautifully;
-Mastering the steps leading to reincarnation;
-Disclosure of the multi-faceted creative abilities of the individual.
+        The program offers a set of exercises for acting, plasticity,
+        speech techniques and psychotechnique.
+        <br />
+        <List bulleted>
+          <List.Header as='h5'>
+            Passing the program develops the following skills:
+          </List.Header>
+          <List.Item>
+            Clearly express thoughts, improve diction;
+          </List.Item>
+          <List.Item>
+            Control emotions;
+          </List.Item>
+          <List.Item>
+            Understand people, read <i>body language</i>;
+          </List.Item>
+          <List.Item>
+            Adjust yourself to receive positive emotions;
+          </List.Item>
+          <List.Item>
+            Present yourself and be the attention center;
+          </List.Item>
+          <List.Item>
+            Develop the body plasticity;
+          </List.Item>
+          <List.Item>
+            Voice and breathing;
+          </List.Item>
+          <List.Item>
+            The ability to speak beautifully;
+          </List.Item>
+          <List.Item>
+            Mastering the steps leading to transformation;
+          </List.Item>
+          <List.Item>
+            Disclosure multi-faceted creative abilities of the individual.
+          </List.Item>
+        </List>
+        <br />
+        The program ends with showing theatrical play.
+        The performance is carried out on professional theatrical grounds
+        of the city.
       </Course>
       <Divider section />
 
@@ -207,52 +230,6 @@ The certification program for the study of NLP as a modern line of practical psy
     Our course "NLP-Practitioner" is developed on the basis of international standards, and its program is accepted as a standard by many Russian and foreign NLP Centers. Since 1994, more than 10,000 people of various professions and ages have successfully completed the NLP-Praktik course. Many of the participants of our trainings have already reached high levels of professional and personal self-realization, most realized their most cherished dreams, and almost all noted significant changes in their ability to influence themselves and the world around them (they mastered the tools of self-development and increased efficiency).
     The course "NLP-Practitioner" is an adapted for the modern man's way to an accelerated exit to the maximum of its capabilities. What many are presented as "The secrets of success", in our course "NLP-Practitioner" is given in the form of practical tools that can be used by everyone who has been trained.
 
-1 level "Getting to know NLP and the forge of personal potential" (the mechanics of effective goal-setting in NLP):
-Development of strategic thinking.
-Use of highly productive states.
-Technique "Walt Disney's creative strategy" and creative thinking.
-
-2 step "Matrix of emotional intelligence" (connection of emotions and thinking):
-Managing your emotions.
-Ability to read the emotions of the interlocutor.
-Ability to broadcast emotions to the interlocutor.
-Technique "Changing Personal History."
-Switching of negative emotions (uncertainty, restraint, laziness, etc.).
-
-3 step "Framework of roles, beliefs and thinking" (structure of thinking):
-Key principles of NLP.
-Techniques for managing personal outlook.
-The strategy of personal motivation management.
-Methods of verbal persuasion.
-
-4 step "Tame your inner dragons":
- Model of the structure of the personality.
-Changing habits and stopping internal sabotage.
-Elimination of dilemmas and internal contradictions.
-Work with fears.
-Acquaintance with the unconscious.
-Methods of hypnotic speech.
-
-5 step "Secrets of NLP communication" (verbal and non-verbal communication):
-Methods of establishing contact and trust with people.
-Strategies for achieving mutual understanding.
-Effective information gathering.
-Adjustment to the style of thinking of the interlocutor.
-
-6th step "System thinking and communication management" (protection from speech manipulation):
-Principles of systemic thinking in NLP.
-Model of multidimensional analysis of communication.
-Strategy for conflict resolution and negotiation design.
-
-7 step "System work with goals" (model of quick self-study):
-Basics of system work with goals.
-The time factor in working with goals and communication.
-The strategy of information gathering in coaching, psychotherapy and consulting.
-
-8 step "There are turtles to the very bottom ... (integration)" (integration of all the material):
-Connection models together.
-Preparation for certification.
-Certification.
       </Course>
       <Divider section />
 
