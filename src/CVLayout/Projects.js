@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, Divider, List, Button } from 'semantic-ui-react'
+import { Item, Divider, Button } from 'semantic-ui-react'
 
 import ImgSmartCall from './img/smart-call.png'
 import ImgWebasr from './img/webasr.png'

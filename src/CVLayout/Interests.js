@@ -1,9 +1,8 @@
 import React from 'react'
 import {
-  Item, Divider, Button, Icon, Image, Modal, Header
+  Item, Divider, Button, Icon, Image, Modal
 } from 'semantic-ui-react'
 
-import ImgTODO from './img/TODO.png'
 import ImgTraveling from './img/traveling.jpg'
 import ImgPsychology from './img/psychology.jpg'
 import ImgSwimming from './img/swimming.jpg'
@@ -223,6 +222,7 @@ export default function Interests(props) {
               <Modal.Header>Artem's music</Modal.Header>
               <Modal.Content>
                 <iframe
+                  title='alphara_BrRrRBpBpBP-Love.mp3 on SoundCloud'
                   width="100%" height="166" scrolling="no" frameborder="no"
                   allow="autoplay"
                   src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212013785&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
@@ -266,7 +266,8 @@ export default function Interests(props) {
             Startup
           </Item.Header>
           <Item.Description>
-            I desire to get a Startup started. 🦄
+            I desire to get a Startup started.
+            <span role="img" aria-label="Unicorn">🦄 </span>
             <br /><br />
             <Modal closeIcon trigger={
               <Button basic color='teal' floated='left'>
@@ -380,7 +381,8 @@ export default function Interests(props) {
             <br /><br />
             I'm would love to use Brain–Machine Interfaces along with
             Artificial Superintelligence and Quantum Computing in the
-            Self-Developing AI project described below. 🦄
+            Self-Developing AI project described below.
+            <span role="img" aria-label="Unicorn"> 🦄 </span>
             <br /><br />
             <Button basic floated='right' as='a' target='_blank'
               href='//www.google.com/search?q=Brain-Machine+Interfaces'
@@ -418,7 +420,8 @@ export default function Interests(props) {
             documentation in the Internet. The project assumes psycological
             modeling of the best developers and software development.
             The Virtual Software Engineer could implement dreams of all
-            people in the World. 🦄
+            people in the World.
+            <span role="img" aria-label="Unicorn"> 🦄 </span>
             <br /><br />
             I'm <b>looking for Co-Founders, Investors, and team members</b>.
             <br /><br />

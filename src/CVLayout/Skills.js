@@ -5,7 +5,6 @@ import {
 
 import SkillList from './SkillList'
 
-import ImgTODO from './img/TODO.png'
 import ImgAI from './img/ai.jpg'
 import ImgFullStack from './img/full-stack.png'
 import ImgEmbeddedSystems from './img/embedded-systems.jpg'

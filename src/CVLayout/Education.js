@@ -5,7 +5,6 @@ import {
 
 import Course from './Course'
 
-import ImgTODO from './img/TODO.png'
 import ImgUdacity from './img/udacity.jpg'
 import ImgVipassana from './img/vipassana.png'
 import ImgIGISP from './img/igisp.png'

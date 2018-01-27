@@ -107,7 +107,7 @@ export default function Contacts(props) {
       </List.Item>
 
       <List.Item>
-        <Button color='pinterest' as='a' target='_blank'
+        <Button color='red' as='a' target='_blank'
           href='https://pinterest.com/artarakcheev/'
         >
           <Icon name='pinterest' />
@@ -143,7 +143,7 @@ export default function Contacts(props) {
       </List.Item>
 
       <List.Item>
-        <Button color='lignt blue' as='a' target='_blank'
+        <Button color='blue' as='a' target='_blank'
           href='skype:hahumor'
         >
           <Icon name='skype' />
