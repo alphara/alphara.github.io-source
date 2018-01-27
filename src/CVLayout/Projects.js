@@ -1,5 +1,5 @@
 import React from 'react'
-import { Item, Divider } from 'semantic-ui-react'
+import { Item, Divider, List, Button } from 'semantic-ui-react'
 
 import ImgSmartCall from './img/smart-call.png'
 import ImgWebasr from './img/webasr.png'
@@ -22,7 +22,12 @@ import ImgTextGenerator from './img/text-generator.jpg'
 import ImgMachineTranslation from './img/machine-translation.jpg'
 import ImgSpeechRecognizer from './img/speech-recognizer.jpg'
 import ImgKeyPoints from './img/key-points.jpg'
+import ImgCasualGuest from './img/casual-guest.jpg'
+import ImgHumor from './img/humor.jpg'
+import ImgHumorBook from './img/humor-book.jpg'
 import ImgSmartSkateboard from './img/smart-skateboard.jpg'
+
+import PDFBook from './book/how-to-learn-to-joke-funny.pdf'
 
 export default function Projects(props) {
   return (
@@ -421,6 +426,75 @@ export default function Projects(props) {
             tracking to emotion recognition. The completed project takes
             in any image containing faces and identifies the location of
             each face and their facial keypoints.
+          </Item.Description>
+        </Item.Content>
+      </Item>
+      <Divider />
+
+      <Item>
+        <Item.Image size='tiny' src={ImgCasualGuest} />
+        <Item.Content>
+          <Item.Header as='h3'>
+            <span role="img" aria-label="Icon">🎭 </span>
+            Theatrical Play "Casual Guest"
+          </Item.Header>
+          <Item.Description>
+            Played in the theatrical performance "Casual Guest" based on play
+            "Million in the Wedding Basket" of Giulio Scarnicci and
+            Renzo Tarabusi. The play was shown in Vladimir Vysotsky's House on Taganka
+            in Moscow in June 2010.
+          </Item.Description>
+        </Item.Content>
+      </Item>
+      <Divider />
+
+      <Item>
+        <Item.Image size='tiny' src={ImgHumor} />
+        <Item.Content>
+          <Item.Header as='h3'>
+            <span role="img" aria-label="Icon">🎭 </span>
+            Online Webinar "How to create funny jokes"
+          </Item.Header>
+          <Item.Description>
+            Designed, orginized and conducted an online webinar with 50+
+            participants. The webinar was designed with of modeling
+            genuis of the most successful humorists of Russia.
+            The humor model was created by myself and includes
+            skills, behavior, beleifs, values, strategies and techinques
+            of professional humorists.
+            Used Information Technologies for teaching people.
+            Received awesome feedback from participants
+            of the webinar.
+          </Item.Description>
+        </Item.Content>
+      </Item>
+      <Divider />
+
+      <Item>
+        <Item.Image size='tiny' src={ImgHumorBook} />
+        <Item.Content>
+          <Item.Header as='h3'>
+            <span role="img" aria-label="Icon">📖 </span>
+            Book "How to learn to joke funny"
+          </Item.Header>
+          <Item.Description>
+            Wrote a book "How to learn to joke funny" on base of modeling
+            of the best Russian humorists.
+            <br /><br />
+            The book includes the following topics:
+            About humor;
+            The Formula of Laughter;
+            The structure of the joke;
+            Creating jokes;
+            Spontaneity of humor;
+            Solving problems and tasks through humor;
+            Integration, answers to questions, further development;
+            And others.
+            <br /><br />
+            You can download the book on Russian.
+            <Button basic floated='right' href={PDFBook} target='_blank'>
+              Read the book
+            </Button>
           </Item.Description>
         </Item.Content>
       </Item>

@@ -10,7 +10,7 @@ import ImgSwimming from './img/swimming.jpg'
 import ImgBodyPractices from './img/body-practices.jpg'
 import ImgSpiritualism from './img/spiritualism.jpg'
 import ImgActingSkills from './img/acting-skills.jpg'
-import ImgHumor from './img/humor.jpg'
+import ImgLaughter from './img/laughter.jpg'
 import ImgInfobusiness from './img/infobusiness.jpg'
 import ImgMusic from './img/music.jpg'
 import ImgMBA from './img/mba.jpg'
@@ -20,6 +20,9 @@ import ImgBlockchain from './img/blockchain.jpg'
 import ImgArtificialSuperIntelligence from './img/artificial-super-intelligence.jpg'
 import ImgQuantumComputer from './img/quantum-computer.jpg'
 import ImgBrainMachineInterfaces from './img/brain-machine-interfaces.jpg'
+import ImgFraktal from './img/fraktal.jpg'
+
+import PDFBook from './book/how-to-learn-to-joke-funny.pdf'
 
 export default function Interests(props) {
   return (
@@ -31,7 +34,7 @@ export default function Interests(props) {
             Traveling
           </Item.Header>
           <Item.Description>
-            Traveled in the following countries:
+            I traveled in the following countries:
             <span role="img" aria-label="Flag"> 🇧🇷</span> Brazil,
             <span role="img" aria-label="Flag"> 🇵🇦</span> Panama,
             <span role="img" aria-label="Flag"> 🇨🇷</span> Costa Rica,
@@ -60,17 +63,27 @@ export default function Interests(props) {
             Psychology
           </Item.Header>
           <Item.Description>
-            Ericksonian Hypnosis (completed course),
-            Trance Induction,
-            Neuro-Linguistic Programming (completed courses NLP Master Practitioner, NLP Master Practitioner, New Code of NLP),
-            Strategy Modeling,
-            Holotropic Breathwork,
-            Provocative Therapy,
-            Thanatotherapy,
-            Body Therapy
-            Laugther Therapy,
-            Humor Therapy,
-            Human Design
+            I have studied the approaches of modern psychology:
+            Ericksonian Hypnosis;
+            Neuro-Linguistic Programming;
+            Modeling genius (psycological modeling);
+            Holotropic Breathwork;
+            Provocative Therapy;
+            Thanatotherapy;
+            Body Therapy;
+            Laugther Therapy;
+            Humor Therapy;
+            Human Design.
+            <br /><br />
+            Psychology (psychological modeling) allows us to identify models
+            of human skills, strategies, behavior, thinking and intuition.
+            The psycological model of human brain can be codded
+            in deep learning applications on programming languages.
+            We could model real human brain neurons with artificial
+            intelligence and neural networks.
+            <br /><br />
+            I believe that psychological modeling will make a striking
+            contribution in development of Self-Developing AI.
           </Item.Description>
         </Item.Content>
       </Item>
@@ -83,7 +96,10 @@ export default function Interests(props) {
             Swimming
           </Item.Header>
           <Item.Description>
-            I love to swim for miles; I could just go back and forth.
+            I love to swim for miles. Swimming is an all-body exercise.
+            A physically demanding combination of cardio and power,
+            it works the heart, and the muscles in legs, arms, torso, hips
+            and all the body.
           </Item.Description>
         </Item.Content>
       </Item>
@@ -96,9 +112,9 @@ export default function Interests(props) {
             Body practices
           </Item.Header>
           <Item.Description>
-            Tensegrity,
-            Yoga,
-            Dynamic Trance States
+            Tensegrity, Yoga and dynamic trance states are maintaining
+            my body in tone. These practices fill my body with energy and
+            my face with smile. They allows me to breathe deeper and feel much better.
           </Item.Description>
         </Item.Content>
       </Item>
@@ -111,10 +127,10 @@ export default function Interests(props) {
             Spiritualism
           </Item.Header>
           <Item.Description>
-            Mediation,
-            Self-Hypnosis,
-            Lucid Dreaming,
-            Enlightenment
+            I'm happy to do mediation, self-hypnosis, lucid dreaming
+            and other spiritual practices.
+            Curious about Enlightenment and high-energy states of
+            mind, body and spirit.
           </Item.Description>
         </Item.Content>
       </Item>
@@ -124,27 +140,42 @@ export default function Interests(props) {
         <Item.Image size='tiny' src={ImgActingSkills} />
         <Item.Content>
           <Item.Header>
-            Acting Skills & Public Performance
+            Acting Skills and Public Performances
           </Item.Header>
           <Item.Description>
-            Completed 10-day course "Art of public speaking, presentation, work with the audience",
-            Completed 9-months course of acting (include: development of plastics, development of speech and voice, psychotechnics, work with dramaturgy),
-            Played in a theatrical performance "Million in the Wedding Basket" in Vysotsky's House on Taganka
+            I have completed a course of public speaking, presentation and
+            work with the audience. Also completed a course of acting and
+            played in the theatrical performance.
+            <br /><br />
+            It would be nice to play great show with Self-Developoing AI
+            soon.
           </Item.Description>
         </Item.Content>
       </Item>
       <Divider />
 
       <Item>
-        <Item.Image size='tiny' src={ImgHumor} />
+        <Item.Image size='tiny' src={ImgLaughter} />
         <Item.Content>
           <Item.Header>
-            Humor & Laughter
+            Humor and Laughter
           </Item.Header>
           <Item.Description>
-            Modeled techniques for creating jokes based on strategies of genius humorists,
-            Wrote articles about humor,
-            Wrote a book "How to create funny jokes",
+            I have written a book "How to learn to joke funny" with results
+            of modeling of the best Russian humorists.
+            The book is written on Russian, but I would like to translate
+            on English.
+            <br /><br />
+            I have an idea to create an AI Joker, recurrent neural network
+            algorithm, which would be trained on corpus of jokes,
+            funny stories and anecdotes and could generate jokes
+            with language models presented in the book.
+            <br /><br />
+            AI Joker is research step towards to Self-Developing AI.
+            <br /><br />
+            <Button basic color='teal' floated='left' href={PDFBook} target='_blank'>
+              Read the book (on Russian)
+            </Button>
           </Item.Description>
         </Item.Content>
       </Item>
@@ -154,10 +185,18 @@ export default function Interests(props) {
         <Item.Image size='tiny' src={ImgInfobusiness} />
         <Item.Content>
           <Item.Header>
-            Infobusiness
+            Information Techonlogies
           </Item.Header>
           <Item.Description>
-            Conducted an online webinar "How to learn to joke funny" with 50+ participants.
+            As Software Engineer, I was developing IT solutions many years.
+            <br /><br />
+            Also using IT, I conducted an online webinar "How to create funny jokes".
+            Joke is one of the most creative strategies to think. I was
+            teaching participants with results of research of human brain
+            of humorists.
+            <br /><br />
+            I would like to release IT solution with Self-Developing AI,
+            conduct webinar as show about Self-Developing AI.
           </Item.Description>
         </Item.Content>
       </Item>
@@ -173,19 +212,25 @@ export default function Interests(props) {
             I love to listen
             Chillout, Jazz, Downtempo, Trance, Ambient, Rock, Metal,
             Punk, Doom, Samba, Deep House.
+            <br /><br />
+            I play harmonica and electric guitar, and enjoy software for musicians.
+            <br /><br />
+            <Modal closeIcon trigger={
+              <Button basic color='teal' floated='left'>
+                Listen Artem's music
+              </Button>
+            }>
+              <Modal.Header>Artem's music</Modal.Header>
+              <Modal.Content>
+                <iframe
+                  width="100%" height="166" scrolling="no" frameborder="no"
+                  allow="autoplay"
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212013785&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
+                ></iframe>
+              </Modal.Content>
+            </Modal>
             <br />
             <br />
-            I play Harmonica and Electric Guitar.
-            <br />
-            <br />
-            Here is my own music
-            <br />
-            <br />
-            <iframe
-              width="100%" height="166" scrolling="no" frameborder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/212013785&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"
-            ></iframe>
           </Item.Description>
         </Item.Content>
       </Item>
@@ -198,8 +243,7 @@ export default function Interests(props) {
             MBA
           </Item.Header>
           <Item.Description>
-            The Master of Business Administration (MBA) is a master's
-            degree in business administration (management).
+            I want get the Master of Business Administration (MBA) degree.
             <br /><br />
             <Button basic floated='right' as='a' target='_blank'
               href='https://ru.pinterest.com/search/pins/?q=mba'
@@ -208,7 +252,7 @@ export default function Interests(props) {
                 <Icon name='pinterest' />
                 <Icon corner name='linkify' />
               </Icon.Group>
-              Read more
+              MBA on Pinterest
             </Button>
           </Item.Description>
         </Item.Content>
@@ -222,11 +266,7 @@ export default function Interests(props) {
             Startup
           </Item.Header>
           <Item.Description>
-            A startup company is an entrepreneurial venture which is
-            typically a newly emerged, fast-growing business that aims
-            to meet a marketplace need by developing a viable business
-            model around an innovative product, service, process or a
-            platform.
+            I desire to get a Startup started. 🦄
             <br /><br />
             <Modal closeIcon trigger={
               <Button basic color='teal' floated='left'>
@@ -246,7 +286,7 @@ export default function Interests(props) {
                 <Icon name='pinterest' />
                 <Icon corner name='linkify' />
               </Icon.Group>
-              Read more
+              Startup on Pinterest
             </Button>
           </Item.Description>
         </Item.Content>
@@ -260,13 +300,7 @@ export default function Interests(props) {
             Blockchain & Cryptocurrencies
           </Item.Header>
           <Item.Description>
-            A blockchain, is a continuously growing list of records,
-            called blocks, which are linked and secured using cryptography.
-            <br /><br />
-            A cryptocurrency is a digital asset designed to work as a
-            medium of exchange that uses cryptography to secure its
-            transactions, to control the creation of additional units,
-            and to verify the transfer of assets.
+            I'm wondering about using Blockchain on Quantum Computers.
             <br /><br />
             <Button basic floated='right' as='a' target='_blank'
               href='https://ru.pinterest.com/search/pins/?q=blockchain'
@@ -275,7 +309,7 @@ export default function Interests(props) {
                 <Icon name='pinterest' />
                 <Icon corner name='linkify' />
               </Icon.Group>
-              Read more
+              Blockchain on Pinterest
             </Button>
           </Item.Description>
         </Item.Content>
@@ -289,18 +323,20 @@ export default function Interests(props) {
             Artificial Superintelligence (ASI)
           </Item.Header>
           <Item.Description>
-            Superintelligence as an intellect that is much smarter than the
-            best human brains in practically every field, including
-            scientific creativity, general wisdom and social skills.
+            Artificial Superintelligence is much smarter than the best human
+            brains.
+            <br /><br />
+            Self-Developing AI is an excellent instance of
+            the Superintelligence.
             <br /><br />
             <Button basic floated='right' as='a' target='_blank'
-              href='https://en.wikipedia.org/wiki/Superintelligence'
+              href='//www.google.com/search?q=artificial+superintelligence'
             >
               <Icon.Group>
-                <Icon name='wikipedia' />
+                <Icon name='google' />
                 <Icon corner name='linkify' />
               </Icon.Group>
-              Read more
+              ASI in Google
             </Button>
           </Item.Description>
         </Item.Content>
@@ -311,22 +347,21 @@ export default function Interests(props) {
         <Item.Image size='tiny' src={ImgQuantumComputer} />
         <Item.Content>
           <Item.Header>
-            Quantum computing
+            Quantum computing (QC)
           </Item.Header>
           <Item.Description>
-            Whereas common digital computing requires that the data be
-            encoded into binary digits (bits), each of which is always
-            in one of two definite states (0 or 1), quantum computation
-            uses quantum bits, which can be in superpositions of states.
+            I'm looking for an access to quantum computer for research,
+            experimentation and running my
+            Artificial Intelligence and Blockchain applications.
             <br /><br />
             <Button basic floated='right' as='a' target='_blank'
-              href='https://en.wikipedia.org/wiki/Quantum_computing'
+              href='//www.google.com/search?q=Quantum+computing'
             >
               <Icon.Group>
-                <Icon name='wikipedia' />
+                <Icon name='google' />
                 <Icon corner name='linkify' />
               </Icon.Group>
-                Read more
+              QC in Google
             </Button>
           </Item.Description>
         </Item.Content>
@@ -340,22 +375,68 @@ export default function Interests(props) {
             Brain-Machine Interfaces (BMI)
           </Item.Header>
           <Item.Description>
-            Brain–Machine Interface (BMI) is a direct communication pathway
-            between an enhanced or wired brain and an external device.
+            Brain–Machine Interface is communication pathway
+            between a brain and an external device.
+            <br /><br />
+            I'm would love to use Brain–Machine Interfaces along with
+            Artificial Superintelligence and Quantum Computing in the
+            Self-Developing AI project described below. 🦄
             <br /><br />
             <Button basic floated='right' as='a' target='_blank'
-              href='https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface'
+              href='//www.google.com/search?q=Brain-Machine+Interfaces'
             >
               <Icon.Group>
-                <Icon name='wikipedia' />
+                <Icon name='google' />
                 <Icon corner name='linkify' />
               </Icon.Group>
-                Read more
+              BMI in Google
             </Button>
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider />
 
+      <Item>
+        <Item.Image size='tiny' src={ImgFraktal} />
+        <Item.Content>
+          <Item.Header>
+            Self-Developing AI
+          </Item.Header>
+          <Item.Description>
+            I'm architecting with passion the <b>Self-Developing AI</b>.
+            This is a <i>Virtual Software Engineer</i>, which develops
+            any kind of software include backend and frontend,
+            deep learning and neural networks,
+            artificial intelligence and <i>itself</i>.
+            The Artificial Superintelligence is able to improve its own code.
+            <br /><br />
+            The Self-Developing AI is secure and controlled by mankind.
+            It recieves input with application specification on human language
+            and outputs well developed and tested working code of the
+            application on programming language.
+            AI deeply learns programming by itself through reading
+            documentation in the Internet. The project assumes psycological
+            modeling of the best developers and software development.
+            The Virtual Software Engineer could implement dreams of all
+            people in the World. 🦄
+            <br /><br />
+            I'm <b>looking for Co-Founders, Investors, and team members</b>.
+            <br /><br />
+            Please,
+            <br /><br />
+            <Button color='green' fluid size='large' as='a' target='_blank'
+              href='mailto:artarakcheev@gmail.com'
+            >
+              <Icon name='mail'/>
+              <i>Contact me &nbsp;&nbsp;</i>
+            <Icon name='heartbeat' />
+            </Button>
+            <br />
+            Sincerely,<br />
+            Artem Arakcheev.
+          </Item.Description>
+        </Item.Content>
+      </Item>
     </Item.Group>
   );
 }
