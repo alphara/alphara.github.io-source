@@ -17,6 +17,7 @@
     "subtree:setup": "git subtree add --prefix=build  git@github.com:alphara/alphara.github.io.git master",
     "subtree:pull": "git fetch git@github.com:alphara/alphara.github.io.git master && git subtree pull --prefix=build git@github.com:alphara/alphara.github.io.git master",
     "subtree:push": "git fetch git@github.com:alphara/alphara.github.io.git master && git subtree push --prefix=build git@github.com:alphara/alphara.github.io.git master",
-    "publish": "npm run subtree:push"
+    "publish": "npm run subtree:push",
+    "rescale-images": "sips -Z 250 ./src/CVLayout/img/*.*"
   }
 }
