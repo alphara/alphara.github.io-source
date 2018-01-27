@@ -7,7 +7,7 @@ import Course from './Course'
 
 import ImgTODO from './img/TODO.png'
 import ImgUdacity from './img/udacity.jpg'
-import ImgVipassana from './img/vipassana.jpg'
+import ImgVipassana from './img/vipassana.png'
 import ImgIGISP from './img/igisp.png'
 import ImgTheatreObraz from './img/theatre-obraz.jpg'
 import ImgNLPCenter from './img/nlp-center.jpg'
@@ -30,8 +30,7 @@ export default function Education(props) {
         are going to redefine virtually every aspect of our lives.
         This program introduces to the broad field of artificial intelligence,
         and prepares for a wide variety of opportunities in the AI field.
-        <br />
-        <br />
+        <br /><br />
         The program built in collaboraton with industry leaders to bring
         cutting-edge curriculum covering topics such as game-playing search,
         logic and planning, probabilistic inference, computer vision,
@@ -92,9 +91,9 @@ export default function Education(props) {
         the practice of Ericksonian hypnotherapy, more complex techniques,
         acquiring one's own therapeutic experience.
         <br />
-        <List ordered>
+        <List bulleted horizontal size='tiny'>
           <List.Header as='h5'>
-            The participants of the program receive the following skills:
+            The participants get the following skills:
           </List.Header>
           <List.Item>
             Guiding and maintaining a hypnotic trance
@@ -106,8 +105,8 @@ export default function Education(props) {
             Using Eriksonian hypnosis in group work
           </List.Item>
           <List.Item>
-            Self-hypnosis skills, allowing more fully and deeper use "wisdom"
-            of own unconscious
+            Self-hypnosis skills, allowing more fully and deeper
+            use <i>wisdom</i> of own unconscious
           </List.Item>
           <List.Item>
             Possibility of teaching clients with the skills of self-hypnosis
@@ -118,55 +117,60 @@ export default function Education(props) {
 
       <Course
         image={ImgTheatreObraz}
-        icon='🕴🏻 '
+        icon='🕺🏻 '
         degree='Actor'
-        school='Theater School "Image"'
+        school='Theater School Image'
         location='Moscow, Russia'
         dates='Jul, 2009 - Jun, 2010 (243 hours)'
         href='//www.teatr-obraz.ru/page/kursy-akterskogo-masterstva-dlya-zhizni-i-stseny'
       >
         The program offers a set of exercises for acting, plasticity,
         speech techniques and psychotechnique.
-        <br />
-        <List bulleted>
-          <List.Header as='h5'>
-            Passing the program develops the following skills:
-          </List.Header>
-          <List.Item>
-            Clearly express thoughts, improve diction;
-          </List.Item>
-          <List.Item>
-            Control emotions;
-          </List.Item>
-          <List.Item>
-            Understand people, read <i>body language</i>;
-          </List.Item>
-          <List.Item>
-            Adjust yourself to receive positive emotions;
-          </List.Item>
-          <List.Item>
-            Present yourself and be the attention center;
-          </List.Item>
-          <List.Item>
-            Develop the body plasticity;
-          </List.Item>
-          <List.Item>
-            Voice and breathing;
-          </List.Item>
-          <List.Item>
-            The ability to speak beautifully;
-          </List.Item>
-          <List.Item>
-            Mastering the steps leading to transformation;
-          </List.Item>
-          <List.Item>
-            Disclosure multi-faceted creative abilities of the individual.
-          </List.Item>
-        </List>
-        <br />
         The program ends with showing theatrical play.
         The performance is carried out on professional theatrical grounds
         of the city.
+        <br /><br />
+        <List bulleted horizontal size='tiny'>
+          <List.Header as='h5'>
+            Program develops the following skills:
+          </List.Header>
+          <List.Item>
+            Clearly express thoughts
+          </List.Item>
+          <List.Item>
+            Improve diction
+          </List.Item>
+          <List.Item>
+            Control emotions
+          </List.Item>
+          <List.Item>
+            Understand people
+          </List.Item>
+          <List.Item>
+            Read <i>body language</i>
+          </List.Item>
+          <List.Item>
+            Adjusting for positive emotions
+          </List.Item>
+          <List.Item>
+            Present to be in center of attention
+          </List.Item>
+          <List.Item>
+            Develop body plasticity
+          </List.Item>
+          <List.Item>
+            Voice and breathing
+          </List.Item>
+          <List.Item>
+            The ability to speak beautifully
+          </List.Item>
+          <List.Item>
+            Mastering transformation
+          </List.Item>
+          <List.Item>
+            Disclosure creativity
+          </List.Item>
+        </List>
       </Course>
       <Divider section />
 
@@ -179,39 +183,68 @@ export default function Education(props) {
         dates='Sep, 2009 - Oct, 2009 (80 hours)'
         href='//www.nlpcenter.ru/index.php?sid=104'
       >
-    This course offers to get acquainted with the elements of an effectively constructed speech. Helps to develop, analyze and improve their own oratorical style, and develops behavioral flexibility when interacting with different people in the group.
+        This course offers to get acquainted with the elements of an
+        effectively constructed speech. Helps to develop, analyze and
+        improve their own oratorical style, and develops behavioral
+        flexibility when interacting with different people in the group.
       </Course>
       <Divider section />
 
       <Course
         image={ImgNLPCenter}
         icon='👨🏻‍🎓 '
-        degree='Master Practitioner in the Art and Science of Neuro-Linguistic Programming'
+        degree='Master Practitioner of Neuro-Linguistic Programming'
         school='Center of Neuro-Linguistic Programming in Education'
         location='Moscow, Russia'
         dates='Mar, 2009 - Jun, 2009 (192 hours)'
         href='//www.nlpcenter.ru/index.php?sid=97'
       >
-    Advanced certification program, whose mission is to develop more advanced techniques and models of NLP, as well as to improve communication skills, personal changes, study the model of the belief structure and work with motivation and changing the limiting perceptions of another person.
-
-        Art and science of Neuro-Linguistic Programming (NLP) in the course
-        of 24-day NLP Certification Training Program.
-
-        This training meets and exceeds the minimum training standards set forth
-        by the International Association of NLP.
-
-
-The main objectives of the course "NLP-Master" are:
-Description of the elements of mastery and access to the state of mastery.
-Training in the basic principles and techniques of NLP modeling.
-Mastering the writing language of sensory strategies. Development of skills for working with sensory micro- and macro-strategies.
-Formation of a systematic approach to work with human goals and values.
-Learning to use in their life the systemic models of modern NLP.
-Presentation of new approaches to the analysis and development of one's own personality.
-Developing skills to systematically collect information, plan and analyze your own work as a consultant (coach).
-Development of skills and expansion of tools for working with upper logical levels.
-Development of flexibility in creating your own techniques and skills to work with symptoms of varying complexity.
-Going to the meta-level understanding of the methodology and principles of NLP as a cognitive-synergetic paradigm.
+        Advanced certification program, whose mission is to develop more
+        advanced techniques and models of NLP, as well as to improve
+        communication skills, personal changes, study the model of the belief
+        structure and work with motivation and changing the limiting
+        perceptions of another person.
+        <br />
+        <List bulleted horizontal size='tiny'>
+          <List.Header as='h5'>
+            The main course objectives are:
+          </List.Header>
+          <List.Item>
+            Elements of mastery and access to the state of mastery
+          </List.Item>
+          <List.Item>
+            Training in the basic principles and techniques of NLP modeling
+          </List.Item>
+          <List.Item>
+            Mastering sensory strategies language. Development of skills
+            for working with sensory micro- and macro-strategies
+          </List.Item>
+          <List.Item>
+            Formation of a systematic approach to work with goals and values
+          </List.Item>
+          <List.Item>
+            Usage of systemic models of modern NLP
+          </List.Item>
+          <List.Item>
+            New approaches to the analysis and development personality
+          </List.Item>
+          <List.Item>
+            Developing skills to systematically collect information, plan
+            and analyze own work as a coach
+          </List.Item>
+          <List.Item>
+            Developing skills and tools expansion for working with upper
+            logical levels
+          </List.Item>
+          <List.Item>
+            Development of flexibility in creating own techniques and skills
+            to work with symptoms of varying complexity
+          </List.Item>
+          <List.Item>
+            Going to the meta-level understanding of the methodology and
+            NLP principles as a cognitive-synergetic paradigm
+          </List.Item>
+        </List>
 
       </Course>
       <Divider section />
@@ -225,11 +258,21 @@ Going to the meta-level understanding of the methodology and principles of NLP a
         dates='Sep, 2008 - Nov, 2008 (176 hours)'
         href='//www.nlpcenter.ru/index.php?sid=168'
       >
-The certification program for the study of NLP as a modern line of practical psychology, which is designed for everyone interested in the latest methods and technologies of personal and professional growth. The course involves mastering the basic knowledge and skills of NLP. The participants of the seminar will be able to develop the acuity of perception, learn to see the true intentions and needs of different people hidden behind their behavior, quickly collect, structure and accurately convey information, expand the arsenal of negotiation techniques, achieve persuasiveness in interacting with people. In general, the course is aimed at mastering effective communication strategies, managing your own states, developing creativity, mastering ways to overcome the crisis and conflict, optimizing the processes of achieving personal and professional results, mastering models of systemic and strategic thinking.
-
-    Our course "NLP-Practitioner" is developed on the basis of international standards, and its program is accepted as a standard by many Russian and foreign NLP Centers. Since 1994, more than 10,000 people of various professions and ages have successfully completed the NLP-Praktik course. Many of the participants of our trainings have already reached high levels of professional and personal self-realization, most realized their most cherished dreams, and almost all noted significant changes in their ability to influence themselves and the world around them (they mastered the tools of self-development and increased efficiency).
-    The course "NLP-Practitioner" is an adapted for the modern man's way to an accelerated exit to the maximum of its capabilities. What many are presented as "The secrets of success", in our course "NLP-Practitioner" is given in the form of practical tools that can be used by everyone who has been trained.
-
+        The certification program for the study of NLP as a modern line of
+        practical psychology, which is designed for everyone interested in
+        the latest methods and technologies of personal and professional
+        growth.
+        The participants of the seminar are able to develop acuity
+        of perception, learn to see true intentions and needs of
+        different people hidden behind their behavior, quickly collect,
+        structure and accurately convey information, expand arsenal
+        of negotiation techniques, achieve persuasiveness in interacting
+        with people.
+        The course is aimed at mastering effective communication
+        strategies, managing own states, developing creativity,
+        mastering ways to overcome crisis and conflict, optimizing
+        processes of achieving personal and professional results,
+        mastering models of systemic and strategic thinking.
       </Course>
       <Divider section />
 

@@ -56,7 +56,7 @@ export default function Contacts(props) {
         <Button color='blue' as='a' target='_blank'
           href='https://www.kaggle.com/arakcheev'
         >
-          <Icon name='kaggle' />
+          <Icon name='linkify' />
           Kaggle
         </Button>
       </List.Item>
@@ -65,7 +65,7 @@ export default function Contacts(props) {
         <Button color='orange' as='a' target='_blank'
           href='https://stackoverflow.com/users/3069279/alphara'
         >
-          <Icon name='stackoverflow' />
+          <Icon name='stack overflow' />
           Stack Overflow
         </Button>
       </List.Item>

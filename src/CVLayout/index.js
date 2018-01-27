@@ -20,14 +20,11 @@ import ImgArtem from './img/Artem.jpg'
 import ImgSurface1 from './img/surface/1.png'
 import ImgSurface2 from './img/surface/2.jpg'
 import ImgSurface8 from './img/surface/8.jpg'
-
-import ImgSurface10  from './img/surface/10.jpg'
+import ImgSurface10 from './img/surface/10.jpg'
 import ImgSurface15 from './img/surface/15.jpg'
 import ImgSurface17 from './img/surface/17.jpg'
-
 import ImgSurface36 from './img/surface/36.jpg'
 import ImgSurface38 from './img/surface/38.png'
-
 import ImgSurface42 from './img/surface/42.jpg'
 import ImgSurface43 from './img/surface/43.jpg'
 import ImgSurface45 from './img/surface/45.jpg'

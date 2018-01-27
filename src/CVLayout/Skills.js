@@ -15,6 +15,9 @@ import ImgComputing from './img/computing.jpg'
 import ImgProjectManagement from './img/project-management.jpg'
 import ImgActing from './img/acting.jpg'
 import ImgTrainer from './img/trainer.jpg'
+import ImgCoaching from './img/coaching.jpg'
+import ImgModelingGenius from './img/modeling-genius.jpg'
+import ImgEricksonHypnosis from './img/erickson-hypnosis.jpg'
 
 const emoji = {
   'ai': '🧠',
@@ -27,7 +30,7 @@ const emoji = {
   'acting': '🎭',
   'training': '👨🏻‍🏫',
   'coachin': '👨🏻‍💼',
-  'modeling': '🕵🏻‍♂️',
+  'modeling': '🕵🏻‍',
   'hypnosis': '🤵🏻'
 }
 
@@ -590,6 +593,77 @@ export default function Skills(props) {
       <Divider section />
 
       <Item>
+        <Item.Image size='small' src={ImgTrainer} />
+        <Item.Content>
+          <Item.Header>
+            PUBLIC SPEAKING AND TRAINING
+          </Item.Header>
+          <Item.Description>
+            <List>
+              <SkillList
+                emoji={emoji['training']}
+                name='Oratory'
+                skills={[
+                  'Basic competencies',
+                  'Structure of speech',
+                  'Effective performance',
+                  'Key micro- and macro skills',
+                  'Positive presuppositions',
+                  'Behavioral flexibility',
+                  'Development of oratory style',
+                ]}
+              />
+              <SkillList
+                emoji={emoji['training']}
+                name='Training/Speech Design'
+                skills={[
+                  'Presentations',
+                  'Trainings',
+                  'Effective content',
+                  'Presupposition of teaching',
+                  'Diversity of learning activites',
+                  'Using style of successful speakers',
+                ]}
+              />
+              <SkillList
+                emoji={emoji['training']}
+                name='Motivation'
+                skills={[
+                  'Structure',
+                  'Verbal motivation',
+                  'Unconscious influence',
+                  'Cross-cutting motivation',
+                  'Individual preferences',
+                ]}
+              />
+              <SkillList
+                emoji={emoji['training']}
+                name='Group Dynamics'
+                skills={[
+                  'Meta-messages',
+                  'Productive states',
+                  'Controling emotional states',
+                  'Maintaining learning states',
+                  'Non-verbal communication',
+                  'Identifying presuppositions',
+                ]}
+              />
+              <SkillList
+                emoji={emoji['training']}
+                name='Utilizing difficulties'
+                skills={[
+                  'Response to positive intentions',
+                  'Work with objections',
+                  'Tools and strategies',
+                  'Work with "difficult" members',
+                ]}
+              />
+            </List>
+          </Item.Description>
+        </Item.Content>
+      </Item>
+
+      <Item>
         <Item.Image size='small' src={ImgActing} />
         <Item.Content>
           <Item.Header>
@@ -653,64 +727,10 @@ export default function Skills(props) {
       </Item>
 
       <Item>
-        <Item.Image size='small' src={ImgTrainer} />
+        <Item.Image size='small' src={ImgCoaching} />
         <Item.Content>
           <Item.Header>
-            TRAINING
-          </Item.Header>
-          <Item.Description>
-            <List>
-              <SkillList
-                emoji={emoji['training']}
-                name=''
-                skills={[
-'Structure of the speaker\'s basic competencies, ensuring the effectiveness of the performance.',
-'Structure and components of effective performance.',
-'Development of key micro- and macro skills of the speaker.',
-'Unconscious and uncontrolled influence of the speaker on the participants of the group: presupposition of teaching and personal presupposition of a person. The development of the ability to identify presuppositions in the speech of other people and build their own presentation on the basis of positive presuppositions.',
-'Meta-message: a significant non-verbal message from the speaker, unconsciously conveying his true attitude to listeners, to himself and to information.',
-'Maintaining its own productive state and varying it.',
-'Determination of the initial emotional state of the group and ways to change it in the presentation process.',
-'Components and criteria for analyzing the effectiveness of speech based on the mental and behavioral preferences of a person.',
-'Identify and analyze your own oratory.',
-'Purposeful development of behavioral flexibility in communication with the audience.',
-'The development of the skill of analyzing the style of successful speakers.',
-'Calling and maintaining a group of different learning states.',
-'Accounting for individual preferences of group members in the perception of information when answering questions.',
-'Structure of motivation. Studying of various ways of verbal motivation of listeners to active participation in presentation or training.',
-'The use of "cross-cutting" motivation in the process of speaking.',
-'Identification and response to positive intentions, hidden in the objections of participants.',
-'Tools and strategies for "recycling" difficulties in the performance process.',
-'Work with "difficult" group members.',
-'Basics of forming an effective design for the content of a speech or training.',
-'Filling the design of the training with different types of learning activity and learning states.',
-'Mini-presentations and analysis of changes in oratory style.',
-                ]}
-              />
-              <SkillList
-                emoji={emoji['training']}
-                name=''
-                skills={[
-                  ''
-                ]}
-              />
-              <SkillList
-                emoji={emoji['training']}
-                name=''
-                skills={[
-                  ''
-                ]}
-              />
-            </List>
-          </Item.Description>
-        </Item.Content>
-      </Item>
-
-      <Item>
-        <Item.Image size='small' src={ImgTODO} />
-        <Item.Content>
-          <Item.Header>
-            NLP COACHING AND THERAPY
+            COACHING AND THERAPY
           </Item.Header>
           <Item.Description>
             <List>
@@ -718,80 +738,73 @@ export default function Skills(props) {
                 emoji={emoji['coaching']}
                 name='Effective goal-setting'
                 skills={[
-                  'Development of strategic thinking',
-                  'Use of highly productive states',
-                  'Technique "Walt Disney\'s creative strategy" and creative thinking',
+                  'Strategic thinking',
+                  'Highly productive states',
+                  'Creative strategies',
                 ]}
               />
               <SkillList
                 emoji={emoji['coaching']}
-                name='"Matrix of emotional intelligence" (connection of emotions and thinking)'
+                name='Emotional intelligence'
                 skills={[
-                  'Managing your emotions',
-                  'Ability to read the emotions of the interlocutor',
-                  'Ability to broadcast emotions to the interlocutor',
-                  'Technique "Changing Personal History"',
-                  'Switching of negative emotions (uncertainty, restraint, laziness, etc.)',
+                  'Managing emotions',
+                  'Reading emotions',
+                  'Broadcasting emotions',
+                  'Changing Personal History',
+                  'Switching of negative emotions',
                 ]}
               />
               <SkillList
                 emoji={emoji['coaching']}
-                name='"Framework of roles, beliefs and thinking" (structure of thinking)'
+                name='Structure of thinking'
                 skills={[
-                  'Key principles of NLP',
-                  'Techniques for managing personal outlook',
-                  'The strategy of personal motivation management',
-                  'Methods of verbal persuasion',
+                  'Roles, beliefs and thinking',
+                  'Managing personal outlook',
+                  'Motivation management',
+                  'Verbal persuasion',
                 ]}
               />
               <SkillList
                 emoji={emoji['coaching']}
-                name='"Tame your inner dragons"'
+                name='Work with fears and restrictions'
                 skills={[
-                  'Model of the structure of the personality',
-                  'Changing habits and stopping internal sabotage',
-                  'Elimination of dilemmas and internal contradictions',
-                  'Work with fears',
-                  'Acquaintance with the unconscious',
-                  'Methods of hypnotic speech',
+                  'Structure of the personality',
+                  'Changing habits',
+                  'Stopping internal sabotage',
+                  'Elimination of dilemmas and contradictions',
+                  'Work with unconscious',
+                  'Hypnotic speech',
                 ]}
               />
               <SkillList
                 emoji={emoji['coaching']}
-                name='"Secrets of NLP communication" (verbal and non-verbal communication)'
+                name='Verbal and non-verbal communication'
                 skills={[
-                  'Methods of establishing contact and trust with people',
-                  'Strategies for achieving mutual understanding',
+                  'Establishing trust contact',
                   'Effective information gathering',
-                  'Adjustment to the style of thinking of the interlocutor',
+                  'Adjustment of interlocutor thinking style',
+                  'Mutual understanding',
                 ]}
               />
               <SkillList
                 emoji={emoji['coaching']}
-                name='"System thinking and communication management" (protection from speech manipulation)'
+                name='System thinking'
                 skills={[
-                  'Principles of systemic thinking in NLP',
-                  'Model of multidimensional analysis of communication',
-                  'Strategy for conflict resolution and negotiation design',
+                  'Communication management',
+                  'Manipulation protection',
+                  'Communication analysis',
+                  'Conflict resolution',
+                  'Negotiation design',
                 ]}
               />
               <SkillList
                 emoji={emoji['coaching']}
-                name='"System work with goals" (model of quick self-study)'
+                name='System work with goals'
                 skills={[
-                  'Basics of system work with goals',
-                  'The time factor in working with goals and communication',
-                  'The strategy of information gathering in coaching, psychotherapy and consulting',
-                ]}
-              />
-
-              <SkillList
-                emoji={emoji['coaching']}
-                name='"There are turtles to the very bottom ... (integration)" (integration of all the material)'
-                skills={[
-                  'Connection models together',
-                  'Preparation for certification',
-                  'Certification',
+                  'Quick self-study',
+                  'Time factor',
+                  'Information gathering',
+                  'Integration',
                 ]}
               />
             </List>
@@ -800,10 +813,10 @@ export default function Skills(props) {
       </Item>
 
       <Item>
-        <Item.Image size='small' src={ImgTODO} />
+        <Item.Image size='small' src={ImgModelingGenius} />
         <Item.Content>
           <Item.Header>
-            NLP MODELING
+            MODELING OF GENIUS
           </Item.Header>
           <Item.Description>
             <List>
@@ -811,115 +824,87 @@ export default function Skills(props) {
                 emoji={emoji['modeling']}
                 name='Mastery of modeling'
                 skills={[
-                  'Study skill NLP',
-                  'Technique "Active Dreaming"',
-                  'What is modeling in NLP, the initial stages of modeling',
-                  'Recognition of behavioral and mental patterns',
-                  'Basic modeling strategies',
-                  'Behavioral and strategic modeling',
-                  'Modeling emotions / states',
-                  'Exercise for testing primary modeling skills',
+                  'Active Dreaming',
+                  'Patterns recognition',
+                  'Stategy modeling',
+                  'Behavioral modeling',
+                  'Emotions/states modeling',
+                  'Micro, macro and meta strategies',
                 ]}
               />
               <SkillList
                 emoji={emoji['modeling']}
-                name='Explicit modeling: macrostatics'
+                name='Macro strategies modeling'
                 skills={[
-                  'The concept of strategy, micro, macro and metastrategy. Strategies and model T.T.E.E',
-                  'Functions of the stages of the T.T.E. in working with strategies',
-                  'Identification and development of strategies: evocation, utilization. Work with strategies',
-                  'Identify the macro strategy of the participants, explore possible ways to optimize the use of the identified strategy',
-                  'Presentation of the structure of the report on the modeling project',
+                  'TOTE model',
+                  'Strategy identification',
+                  'Strategy development',
+                  'Evocation',
+                  'Utilization',
+                  'Strategy optimization',
                 ]}
               />
               <SkillList
                 emoji={emoji['modeling']}
-                name='Explicit modeling: microstrategies'
+                name='Micro strategies modeling'
                 skills={[
                   'Microstrategy recording language',
-                  'Basic (basic) microstrategies',
-                  'Identification and recording of individual microstates (memorization, motivation, decision making)',
-                  'Strategy for the identification of microstrategies',
-                  'Criteria for effective microstarties',
-                  'Examples of the description of strategies',
-                  'Microstrategy techniques NLP',
-                  'Ways to change and embed strategies',
+                  'Basic microstrategies',
+                  'Memorization',
+                  'Motivation',
+                  'Decision making',
+                  'Evaluation of effectiviness',
+                  'Changing and embedding strategies',
                 ]}
               />
               <SkillList
                 emoji={emoji['modeling']}
-                name='Styles of thinking and behavior: metaprograms'
+                name='Styles of thinking and behavior'
                 skills={[
-                  'Introduction to metaprograms',
-                  'Contexts for applying metaprograms',
-                  'Classification of meta-programs (metaprogram patterns)',
-                  'Research metaprogrammnogo profile of man',
-                  'Expression of metaprograms in speech',
-                  'Identification of metaprograms in non-verbal communication',
-                  'Metaprograms and training strategies',
-                  'Supporting and conflicting metaprograms',
-                  'Metaprogramming profiles. The mutual influence of metaprograms in the profile',
-                  'The use of metaprograms in working with strategies',
-                  'Approaches to the change and development of metaprograms',
-                  'Technique "Changing metaprograms (motivation, reflection) on the time line"',
-                  'Possibilities of independent development and application of metaprograms',
+                  'Meta-programs research',
+                  'Changing meta-programs',
+                  'Changing motivation',
+                  'Changing reflection',
+                  'Training strategies',
                 ]}
               />
               <SkillList
                 emoji={emoji['modeling']}
-                name='System work with goals and values. Technology for building a "rich context.'
+                name='System work with goals and values'
                 skills={[
-                  'Values and goals',
-                  'Methods of identifying values their criteria',
-                  'System of values. hierarchy of values',
-                  'Interrelation of values and goals',
-                  'The system of goals',
-                  'Technology for building a "rich context.',
+                  'Values identification',
+                  'System of values',
+                  'Hierarchy of values',
+                  'System of goals',
+                  'Building rich context',
                 ]}
               />
               <SkillList
                 emoji={emoji['modeling']}
-                name='The deep foundation of the world outlook: the structure of beliefs and the verbal methods of their change'
+                name='Formation of world outlook'
                 skills={[
-                  'The connection between the values and beliefs of a person. Structure of beliefs',
-                  'Types of beliefs and mechanisms for their formation',
+                  'Structure of beliefs',
+                  'Beliefs formation',
                   'Convincers',
-                  'Supporting and limiting beliefs. Technology revealing limiting beliefs. The technology of creating supportive beliefs',
-                  'Mechanisms for changing beliefs',
-                  'Verbal tools for changing beliefs: promotion',
+                  'Revealing limiting beliefs',
+                  'Creating supportive beliefs',
+                  'Embedding new beliefs',
+                  'Changing limits',
+                  'Changing beliefs',
+                  'Promotion',
+                  'Language tricks',
                 ]}
               />
               <SkillList
                 emoji={emoji['modeling']}
-                name='Enrichment of the deep structure of the world outlook: NLP techniques for working with beliefs'
+                name='Authors technologies design'
                 skills={[
-                  'Techniques for working with beliefs',
-                  'Extracting and transforming limiting beliefs, embedding supportive beliefs',
-                  'Grafting a new belief',
-                  'Change in limiting beliefs through visual submodalities',
-                  'Embedding a new belief with an imprint',
-                  'The procedure for setting a new belief on the time line',
-                ]}
-              />
-              <SkillList
-                emoji={emoji['modeling']}
-                name='The model of social NLP: analysis of existing techniques and design of authors technologies'
-                skills={[
-                  'Generative NLP',
-                  'Model "Working conceptual work space in NLP"',
-                  'Theory of self-organizing systems and the "Landscape of NLP"',
-                  'Development of a three-position description',
-                  '4 positions of perception',
-                  'Technique "Going beyond the limits of one\'s own card with the help of the model of 4-positional perception" (Technique of "Four Position Perceptions")',
-                ]}
-              />
-              <SkillList
-                emoji={emoji['modeling']}
-                name='Certification of the graduates of the course "NLP-Master"'
-                skills={[
-                  'Preparation for certification',
-                  'Preparation and registration of modeling reports',
-                  'Certification. Demonstration of the use of promotions. Demonstration of calibration and adjustment by metaprogram. Protection of the modeling project. System information gathering. Development and demonstration of equipment on request of the client',
+                  'Models and techniques generation',
+                  'Working conceptual work space',
+                  'Self-organizing systems',
+                  'Three-position description',
+                  'Four-position perception',
+                  'Going beyond limits',
                 ]}
               />
             </List>
@@ -928,7 +913,7 @@ export default function Skills(props) {
       </Item>
 
       <Item>
-        <Item.Image size='small' src={ImgTODO} />
+        <Item.Image size='small' src={ImgEricksonHypnosis} />
         <Item.Content>
           <Item.Header>
             ERICKSONIAN HYPNOSIS
@@ -937,21 +922,16 @@ export default function Skills(props) {
             <List>
               <SkillList
                 emoji={emoji['hypnosis']}
-                name='Basic techniques of Ericksonian hypnosis'
+                name='Basic techniques'
                 skills={[
+                  'Hypnotic trance guidance and maintenance',
                   'Ideodynamic phenomena',
-                  'Traditional and Ericksonian approaches to hypnosis',
-                  'The concept of trance',
-                  'The concept of the unconscious',
-                  'The concept of a resource',
                   'Minimal signs of trance',
-                  'Techniques of guidance and maintenance of hypnotic trance',
                   'Ratification',
                   'Dissociation',
                   'Relativization',
                   'Getting out of trance',
-                  'Features of language use in trance',
-                  'Harmonization of relations with the client',
+                  'Harmonization of relations',
                   'Finger ideomotor signaling'
                 ]}
               />
@@ -960,32 +940,38 @@ export default function Skills(props) {
                 name='Indirect suggestions'
                 skills={[
                   'Suggestions',
-                  'The nature of suggestion',
-                  'Classification of suggestions',
                   'Direct suggestions',
-                  'Indirect suggestions: sequence of acceptance, implication, question, double bond, contextual, compound, truism, absence of mention, time-related, allusion, inverted, nonverbal',
-                  'Hand catalepsy as non-verbal suggestion: exercise technique, therapeutic use',
+                  'Indirect suggestions',
+                  'Sequence of acceptance',
+                  'Implication',
+                  'Question',
+                  'Double bond',
+                  'Contextual',
+                  'Compound',
+                  'Truism',
+                  'Absence of mention',
+                  'Time-related',
+                  'Allusion',
+                  'Inverted',
+                  'Nonverbal',
+                  'Hand catalepsy',
                   'Open suggestions',
                   'Trans therapist'
                 ]}
               />
               <SkillList
                 emoji={emoji['hypnosis']}
-                name='Metaphor in Ericksonian hypnosis'
+                name='Metaphor'
                 skills={[
                   'Microdynamics of trance',
-                  'Levitation of the hand: technique of implementation, therapeutic use',
-                  'Metaphor',
-                  'The nature of metaphor',
-                  'Properties of the therapeutic metaphor',
-                  'Sources of metaphors',
-                  'The client\'s own metaphor',
+                  'Levitation of the hand',
+                  'Therapeutic metaphor',
                   'Contact unconscious',
-                  'The construction of metaphors',
-                  'The scheme "Class of problems is a class of solutions"',
-                  'The metaphor of early learning',
+                  'Construction of metaphors',
+                  'Class of solutions',
+                  'Early learning',
                   'Thematic metaphors',
-                  'A metaphorical tale',
+                  'Metaphorical tale',
                   'Metaphor of change',
                   'Non-verbal metaphor'
                 ]}
@@ -994,31 +980,30 @@ export default function Skills(props) {
                 emoji={emoji['hypnosis']}
                 name='Hypnotic change in perceptual and cognitive processes'
                 skills={[
-                  'Confusion',
-                  'Nature, purpose, principles of creation and utilization of confusion',
-                  'Techniques for creating confusion',
-                  'Techniques for breaking the template',
-                  'The guidance is a handshake',
-                  'Techniques of sensory overload',
+                  'Creation of confusion',
+                  'Utilization of confusion',
+                  'Breaking template',
+                  'Trance guidance with handshake',
+                  'Sensory overload',
                   'Disorientation in time',
                   'Disorientation in space',
                   'Conceptual confusion',
                   'Double pointing',
                   'Subjective distortion of time',
                   'Amnesia',
-                  'Techniques of structuring amnesia',
-                  'Built-in metaphor (Milton Erickson\'s Triple Loop)'
+                  'Built-in metaphor',
+                  'Milton Erickson\'s Triple Loop'
                 ]}
               />
               <SkillList
                 emoji={emoji['hypnosis']}
-                name='Hypnosis'
+                name='Hypno analysis'
                 skills={[
-                  'Going to the causes of symptoms and problems with the help of hypnotic techniques',
+                  'Work with symptoms and problems',
                   'Visual analogue scale',
                   'The keys of Le Crohn',
-                  'Visualization of the symptom',
-                  'Wisdom of the unconscious',
+                  'Visualization of symptom',
+                  'Wisdom of unconscioussness',
                   'Conversation with parts',
                   'TV screen',
                   'Passage along the corridor',
@@ -1027,7 +1012,7 @@ export default function Skills(props) {
                   'An introspective dream',
                   'Somatic bridge',
                   'Affective bridge',
-                  'Journey to the body',
+                  'Journey to body',
                   'Automatic drawing',
                   'Automatic letter',
                   'Drawing techniques',
@@ -1036,23 +1021,18 @@ export default function Skills(props) {
               />
               <SkillList
                 emoji={emoji['hypnosis']}
-                name='Developmental therapy. Age regression and temporal progression'
+                name='Developmental therapy'
                 skills={[
-                  'The hypnotic approach and hypnotic techniques "fit" into the individual history of human development (ontogeny) and into the history of the development of the family as a system',
-                  'Typical problems that arise in key moments in the development of the individual and the family are considered, specific examples of the use of advanced hypnotic techniques for these problems are given',
-                  'Continuum of age regression',
-                  'Hypermemia and revision',
-                  'Strategies for the therapeutic use of age regression',
-                  'Techniques for creating age-related regression',
+                  'Age regression',
+                  'Temporal progression',
+                  'Hypermemia',
+                  'Revision',
                   'Two-level dissociated age regression',
-                  'Man from February',
+                  '"Man from February"',
                   '"Hall of Fame"',
-                  'Temporal progression; strategy of use, technique of creation',
                   'Pseudo-orientation in time',
-                  'Joint use of age regression and temporal progression',
-                  'Milton Erickson and Eric Erickson: stages of the life cycle of the individual',
+                  'Stages of the life cycle',
                   'Psychological tasks of age',
-                  'Therapy in the moments of transition - the key moments of the life cycle',
                   'Stages of the family life cycle',
                   'Normative and non-normative changes',
                   'Losses',
