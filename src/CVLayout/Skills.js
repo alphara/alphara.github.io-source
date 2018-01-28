@@ -661,6 +661,7 @@ export default function Skills(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider section />
 
       <Item>
         <Item.Image size='small' src={ImgActing} />
@@ -724,6 +725,7 @@ export default function Skills(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider section />
 
       <Item>
         <Item.Image size='small' src={ImgCoaching} />
@@ -810,12 +812,13 @@ export default function Skills(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider section />
 
       <Item>
         <Item.Image size='small' src={ImgModelingGenius} />
         <Item.Content>
           <Item.Header>
-            MODELING OF GENIUS
+            PSYCHOLOGICAL MODELING
           </Item.Header>
           <Item.Description>
             <List>
@@ -910,6 +913,7 @@ export default function Skills(props) {
           </Item.Description>
         </Item.Content>
       </Item>
+      <Divider section />
 
       <Item>
         <Item.Image size='small' src={ImgEricksonHypnosis} />
@@ -925,7 +929,6 @@ export default function Skills(props) {
                 skills={[
                   'Hypnotic trance guidance and maintenance',
                   'Ideodynamic phenomena',
-                  'Minimal signs of trance',
                   'Ratification',
                   'Dissociation',
                   'Relativization',
@@ -955,7 +958,6 @@ export default function Skills(props) {
                   'Nonverbal',
                   'Hand catalepsy',
                   'Open suggestions',
-                  'Trans therapist'
                 ]}
               />
               <SkillList
@@ -1030,21 +1032,19 @@ export default function Skills(props) {
                   '"Man from February"',
                   '"Hall of Fame"',
                   'Pseudo-orientation in time',
-                  'Stages of the life cycle',
+                  'Stages of life cycle',
                   'Psychological tasks of age',
-                  'Stages of the family life cycle',
+                  'Stages of family life cycle',
                   'Normative and non-normative changes',
                   'Losses',
                   'Conflicts',
-                  'Therapy at the time of transition'
+                  'Therapy at transition time'
                 ]}
               />
             </List>
           </Item.Description>
         </Item.Content>
       </Item>
-
-
     </Item.Group>
   );
 }

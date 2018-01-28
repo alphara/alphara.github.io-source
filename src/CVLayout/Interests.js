@@ -59,13 +59,13 @@ export default function Interests(props) {
         <Item.Image size='tiny' src={ImgPsychology} />
         <Item.Content>
           <Item.Header>
-            Psychology
+            Psychology and Modeling
           </Item.Header>
           <Item.Description>
             I have studied the approaches of modern psychology:
             Ericksonian Hypnosis;
             Neuro-Linguistic Programming;
-            Modeling genius (psycological modeling);
+            Psycological modeling;
             Holotropic Breathwork;
             Provocative Therapy;
             Thanatotherapy;
@@ -298,7 +298,7 @@ export default function Interests(props) {
         <Item.Image size='tiny' src={ImgBlockchain} />
         <Item.Content>
           <Item.Header>
-            Blockchain & Cryptocurrencies
+            Blockchain and Cryptocurrencies
           </Item.Header>
           <Item.Description>
             I'm wondering about using Blockchain on Quantum Computers.
