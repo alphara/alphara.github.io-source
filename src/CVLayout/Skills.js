@@ -717,7 +717,7 @@ export default function Skills(props) {
                   'Reactions control',
                   'Attracting attention',
                   'Adopting character',
-                  'Game techics',
+                  'Game techniques',
                   'Creative state'
                 ]}
               />

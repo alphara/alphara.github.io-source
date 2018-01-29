@@ -12,6 +12,7 @@ import Projects from './Projects'
 import Education from './Education'
 import Interests from './Interests'
 import Contacts from './Contacts'
+import Resume from './Resume'
 
 import './AnchorFix.css'
 
@@ -19,6 +20,7 @@ import ImgArtem from './img/Artem.jpg'
 
 import ImgSurface1 from './img/surface/1.png'
 import ImgSurface2 from './img/surface/2.jpg'
+import ImgSurface3 from './img/surface/3.jpg'
 import ImgSurface8 from './img/surface/8.jpg'
 import ImgSurface10 from './img/surface/10.jpg'
 import ImgSurface15 from './img/surface/15.jpg'
@@ -33,6 +35,7 @@ import ImgSurface48 from './img/surface/48.png'
 const listSurfaces = [
   ImgSurface1,
   ImgSurface2,
+  ImgSurface3,
   ImgSurface8,
   ImgSurface10,
   ImgSurface15,
@@ -197,6 +200,12 @@ export default class StickyLayout extends Component {
                     </Dropdown.Item>
                     <Dropdown.Divider />
                     <Dropdown.Item>
+                      <a href="#resume">
+                        <span role="img" aria-label="Resume">📄 </span>
+                        Resume
+                      </a>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
                       <a href="#contacts">
                         <span role="img" aria-label="Contacts">🌁 </span>
                         Contacts
@@ -302,8 +311,17 @@ export default class StickyLayout extends Component {
             <Interests />
           </Segment>
 
-          <a name="contacts"> </a>
+          <a name="resume"> </a>
           <Segment color = 'purple'>
+            <Header as='h3' textAlign='left' dividing>
+              <span role="img" aria-label="Resume">📄 </span>
+              RESUME
+            </Header>
+            <Resume />
+          </Segment>
+
+          <a name="contacts"> </a>
+          <Segment color = 'pink'>
             <Header as='h3' textAlign='left' dividing>
               <span role="img" aria-label="Contacts">🌁 </span>
               CONTACTS
