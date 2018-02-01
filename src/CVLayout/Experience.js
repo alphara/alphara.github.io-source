@@ -47,7 +47,7 @@ export default function Experience(props) {
         icon='👨🏼‍💼 '
         position='CTO, Co-Founder'
         organization='Traffic Protector'
-        location='Bali Indonesia [remotely]'
+        location='Netherlands & Israel [remotely]'
         dates='Jan, 2015 - Oct, 2016'
       >
         Executed design, development, testing, deployment and support of
